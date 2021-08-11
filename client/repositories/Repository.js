@@ -1,7 +1,7 @@
 import axios from 'axios';
-const baseDomain = 'https://localhost:1337'; // API for products
-export const basePostUrl = 'https://localhost:1337'; // API for post
-export const baseStoreURL = 'https://localhost:1337'; // API for vendor(store)
+const baseDomain = 'http://localhost:1337'; // API for products
+export const basePostUrl = 'http://localhost:1337'; // API for post
+export const baseStoreURL = 'http://localhost:1337'; // API for vendor(store)
 
 // const baseDomain = 'https://beta.apinouthemes.com'; // API for products
 // export const basePostUrl = 'https://beta.apinouthemes.com'; // API for post

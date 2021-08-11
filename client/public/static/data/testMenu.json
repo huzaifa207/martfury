@@ -1,0 +1,91 @@
+{
+    "menuPrimary": {
+        "menu_1": [
+            {
+                "text": "Home Garden",
+                "url": "/",
+                "extraClass": "menu-item-has-children",
+                "subClass": "sub-menu",
+                "subMenu": [
+                    {
+                        "text": "Furniture",
+                        "url": "/"
+                    },
+                    {
+                        "text": "Home Textiles",
+                        "url": "/home/auto-part"
+                    },
+                    {
+                        "text": "Decoration and Lighting",
+                        "url": "/home/technology"
+                    },
+                    {
+                        "text": "Garden & Tarrace",
+                        "url": "/home/organic"
+                    },
+                    {
+                        "text": "DIY & Hardware",
+                        "url": "/home/market-place"
+                    },
+                    {
+                        "text": "Pets",
+                        "url": "/home/market-place-2"
+                    }
+                ]
+            },
+            {
+                "text": "Kitchen Gourmet",
+                "url": "/",
+                "extraClass": "menu-item-has-children",
+                "subClass": "sub-menu",
+                "subMenu": [
+                    {
+                        "text": "Gourmet",
+                        "url": "/"
+                    },
+                    {
+                        "text": "Small Electrical Appliances",
+                        "url": "/home/auto-part"
+                    }
+                ]
+            },
+            {
+                "text": "Sport Leisure",
+                "url": "/",
+                "extraClass": "menu-item-has-children",
+                "subClass": "sub-menu",
+                "subMenu": [
+                    {
+                        "text": "Other Sports",
+                        "url": "/"
+                    },
+                    {
+                        "text": "Sports Material and Equipments",
+                        "url": "/home/auto-part"
+                    },
+                    {
+                        "text": "Running & Athletics",
+                        "url": "/home/technology"
+                    },
+                    {
+                        "text": "Beach & Pool",
+                        "url": "/home/organic"
+                    },
+                    {
+                        "text": "Swimming",
+                        "url": "/home/market-place"
+                    },
+                    {
+                        "text": "Tennis & Padel",
+                        "url": "/home/market-place-2"
+                    }
+                ]
+            },
+            {
+                "text": "Contact",
+                "url": "/",
+                "extraClass": "menu-item-has-children"
+            }
+        ]
+    }
+}

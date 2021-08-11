@@ -5,9 +5,9 @@ class CollectionRepository {
         let query = '';
         payload.forEach((item) => {
             if (query === '') {
-                query = `slug_in=${item}`;
+                query = `slug=${item}`;
             } else {
-                query = query + `&slug_in=${item}`;
+                query = query + `&slug=${item}`;
             }
         });
         const reponse = await Repository.get(`${baseUrl}/collections?${query}`)
@@ -22,9 +22,9 @@ class CollectionRepository {
         let query = '';
         payload.forEach((item) => {
             if (query === '') {
-                query = `slug_in=${item}`;
+                query = `slug=${item}`;
             } else {
-                query = query + `&slug_in=${item}`;
+                query = query + `&slug=${item}`;
             }
         });
         const reponse = await Repository.get(
@@ -39,7 +39,7 @@ class CollectionRepository {
 
     async getProductsByCollectionSlug(slug) {
         const reponse = await Repository.get(
-            `${baseUrl}/collections?slug_in=${slug}`
+            `${baseUrl}/collections?slug=${slug}`
         )
             .then((response) => {
                 if (response.data && response.data.length > 0) {
@@ -58,7 +58,7 @@ class CollectionRepository {
 
     async getProductsByCategorySlug(slug) {
         const reponse = await Repository.get(
-            `${baseUrl}/product-categories?slug_in=${slug}`
+            `${baseUrl}/product-categories?slug=${slug}`
         )
             .then((response) => {
                 if (response.data && response.data.length > 0) {

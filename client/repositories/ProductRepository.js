@@ -69,7 +69,7 @@ class ProductRepository {
 
     async getProductsByCategory(payload) {
         const reponse = await Repository.get(
-            `${baseUrl}/product-categories?slug=${payload}`
+            `${baseUrl}/collections?slug=${payload}`
         )
             .then((response) => {
                 if (response.data) {
