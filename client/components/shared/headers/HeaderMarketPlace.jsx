@@ -120,7 +120,7 @@ const HeaderMarketPlace = () => {
             <div className="header__top">
                 <div className="container">
                     <div className="header__left">
-                        <p>Welcome to Nexusberry Online Shopping Store !</p>
+                        <p>Welcome to estorexl !</p>
                     </div>
                     <div className="header__right">
                         <ul className="header__top-links">
@@ -147,13 +147,13 @@ const HeaderMarketPlace = () => {
             <div className="header__content">
                 <div className="container">
                     <div className="header__content-left">
-                        <Link href="/home/market-place">
+                        {/* <Link href="/home/market-place"> */}
+                        <Link href="/">
                             <a className="ps-logo">
-                                {/* <img
-                                    src="/static/img/logo.png"
+                                <img
+                                    src="/static/images/logo.png"
                                     alt="martfury"
-                                /> */}
-                                NexusBerry logo
+                                />
                             </a>
                         </Link>
 
@@ -200,12 +200,12 @@ const HeaderMarketPlace = () => {
                             className="menu"
                         />
                         <div className="ps-block--header-hotline inline">
-                            <p>
+                            <a href={"mailto:info@estorexl.eu"}>
                                 <i className="icon-email"></i>
                                 <strong>
-                                    Customer service: info@estorexl.eu
+                                     Customer service: info@estorexl.eu
                                 </strong>
-                            </p>
+                            </a>
                         </div>
                     </div>
                 </div>

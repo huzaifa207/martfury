@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Slider from 'react-slick';
 import Rating from '~/components/elements/Rating';
 import DefaultDescription from '~/components/elements/detail/description/DefaultDescription';
@@ -50,6 +49,7 @@ class ProductDetailImageSwatches extends Component {
         return (
             <div className="ps-product--detail ps-product--fullwidth">
                 <div className="ps-product__header">
+                    product detail
                     <div className="ps-product__thumbnail" data-vertical="true">
                         <figure>
                             <div className="ps-wrapper">

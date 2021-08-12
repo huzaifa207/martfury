@@ -4,9 +4,16 @@ import HeaderDefault from '~/components/shared/headers/HeaderDefault';
 import HeaderMobile from '~/components/shared/headers/HeaderMobile';
 import FooterFullwidth from '~/components/shared/footers/FooterFullwidth';
 
+// headers
+import HeaderMarketPlace from '~/components/shared/headers/HeaderMarketPlace';
+// import HeaderMobile from '~/components/shared/headers/HeaderMobile';
+
 const initHeaders = (
     <>
-        <HeaderDefault />
+        {/* <HeaderDefault />
+        <HeaderMobile /> */}
+
+        <HeaderMarketPlace />
         <HeaderMobile />
     </>
 );

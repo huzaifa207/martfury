@@ -13,11 +13,27 @@ import PageContainer from '~/components/layouts/PageContainer';
 import Newletters from '~/components/partials/commons/Newletters';
 import HeaderMobileProduct from '~/components/shared/header-mobile/HeaderMobileProduct';
 
+// headers
+import HeaderMarketPlace from '~/components/shared/headers/HeaderMarketPlace';
+import HeaderMobile from '~/components/shared/headers/HeaderMobile';
+// detail page
+import ProductDetailImageSwatches from "~/components/elements/detail/ProductDetailImageSwatches";
+import ProductDetailVariants from '~/components/elements/detail/ProductDetailVariants';
+
 const ProductDefaultPage = () => {
     const router = useRouter();
     const { pid } = router.query;
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(false);
+    console.log('product: ', product);
+
+    // headers
+    const headers = (
+        <>
+            <HeaderMarketPlace />
+            <HeaderMobile />
+        </>
+    );
 
     async function getProduct(pid) {
         setLoading(true);
@@ -54,7 +70,9 @@ const ProductDefaultPage = () => {
     let productView, headerView;
     if (!loading) {
         if (product) {
-            productView = <ProductDetailFullwidth product={product} />;
+            // productView = <ProductDetailFullwidth product={product} />;
+            // productView = <ProductDetailImageSwatches />
+            productView = <ProductDetailVariants product={product} />
             headerView = (
                 <>
                     <HeaderProduct product={product} />
@@ -75,15 +93,16 @@ const ProductDefaultPage = () => {
 
     return (
         <PageContainer
-            header={headerView}
+            // header={headerView}
+            // header={headers}
             title={product ? product.title : 'Loading...'}>
             <BreadCrumb breacrumb={breadCrumb} layout="fullwidth" />
             <div className="ps-page--product">
                 <div className="ps-container">
                     <div className="ps-page__container">
                         <div className="ps-page__left">
-                          {productView}
-                          </div>
+                            {productView}
+                        </div>
                         <div className="ps-page__right">
                             <ProductWidgets />
                         </div>
