@@ -6,19 +6,17 @@ const FooterWidgets = () => (
         <aside className="widget widget_footer widget_contact-us">
             <h4 className="widget-title">Contact us</h4>
             <div className="widget_content">
-                <p>Call us 24/7</p>
-                <h3>1800 97 97 69</h3>
+                <h3>info@estorexl.eu</h3>
                 <p>
-                    502 New Design Str, Melbourne, Australia <br />
-                    <a href="mailto:contact@martfury.co">contact@martfury.co</a>
+                    Sadelgatan SE-213 77 Malmö
                 </p>
                 <ul className="ps-list--social">
                     <li>
-                        <a className="facebook" href="#">
+                        <a className="facebook" target="_blank" href="https://www.facebook.com/estorexlsv">
                             <i className="fa fa-facebook"></i>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a className="twitter" href="#">
                             <i className="fa fa-twitter"></i>
                         </a>
@@ -27,9 +25,9 @@ const FooterWidgets = () => (
                         <a className="google-plus" href="#">
                             <i className="fa fa-google-plus"></i>
                         </a>
-                    </li>
+                    </li> */}
                     <li>
-                        <a className="instagram" href="#">
+                        <a className="instagram" target='_blank' href="https://www.facebook.com/estorexlsv">
                             <i className="fa fa-instagram"></i>
                         </a>
                     </li>

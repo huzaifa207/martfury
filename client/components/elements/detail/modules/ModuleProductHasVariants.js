@@ -18,6 +18,8 @@ const ModuleProductHasVariants = ({ ecomerce, currency, product }) => {
     const [selectedSize, setSelectedSize] = useState(null);
     const [sizeItems, setSizeItems] = useState(null);
     const { addItem } = useEcomerce();
+    console.log('select variant state: ', selectedVariant);
+    console.log('size state: ', sizeItems);
 
     function handleAddItemToCart(e) {
         e.preventDefault();
@@ -245,7 +247,7 @@ const ModuleProductHasVariants = ({ ecomerce, currency, product }) => {
                 </div>
                 {priceArea}
                 <ModuleProductDetailDescription product={product} />
-                {variants}
+                var: {variants}
                 <div className="ps-product__shopping">
                     <figure>
                         <figcaption>Quantity</figcaption>
