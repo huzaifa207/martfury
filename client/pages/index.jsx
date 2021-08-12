@@ -10,9 +10,8 @@ import React from 'react';
 // import HomeDefaultProductListing from '~/components/partials/homepage/home-default/HomeDefaultProductListing';
 // import HomeDefaultBanner from '~/components/partials/homepage/home-default/HomeDefaultBanner';
 
+// imports
 import PageContainer from '~/components/layouts/PageContainer';
-import HeaderMarketPlace from '~/components/shared/headers/HeaderMarketPlace';
-import HeaderMobile from '~/components/shared/headers/HeaderMobile';
 import MartketPlace3Banner from '~/components/partials/homepage/marketplace3/MartketPlace3Banner';
 import MarketPlace3SearchTrending from '~/components/partials/homepage/marketplace3/MarketPlace3SearchTrending';
 import MarketPlaceDealOfDay from '~/components/partials/homepage/marketplace/MarketPlaceDealOfDay';
@@ -22,12 +21,7 @@ import Market3ProductGroup from '~/components/partials/homepage/marketplace3/Mar
 import ModuleMarket3ProductGroupBanners from '~/components/partials/homepage/marketplace3/modules/ModuleMarket3ProductGroupBanners';
 
 const HomepageDefaultPage = () => {
-    const headers = (
-        <>
-            <HeaderMarketPlace />
-            <HeaderMobile />
-        </>
-    );
+
     const electricsLinks = [
         'TV Televisions',
         'Air Conditioner',
@@ -75,7 +69,6 @@ const HomepageDefaultPage = () => {
         // ------------------------------------------------------------------------
 
         <PageContainer
-            header={headers}
             title="Multipurpose Marketplace React Ecommerce Template">
             <main id="homepage-5">
                 <div className="container">

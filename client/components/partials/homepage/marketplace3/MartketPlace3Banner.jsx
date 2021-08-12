@@ -16,6 +16,8 @@ class MartketPlace3Banner extends Component {
             speed: 1000,
             slidesToShow: 1,
             slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
         };
 
         return (
@@ -47,7 +49,7 @@ class MartketPlace3Banner extends Component {
                                     </a>
                                 </Link>
                             </div>
-                            <div className="item"></div>
+                            {/* <div className="item"></div> */}
                         </Slider>
                         <Link href="/shop">
                             <a>
