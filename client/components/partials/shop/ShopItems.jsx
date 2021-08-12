@@ -13,6 +13,7 @@ const ShopItems = ({ columns = 4, pageSize = 12 }) => {
     const Router = useRouter();
     const { page } = Router.query;
     const { query } = Router;
+    console.log(query);
     const [listView, setListView] = useState(true);
     const [total, setTotal] = useState(0);
     const [classes, setClasses] = useState(
@@ -60,9 +61,20 @@ const ShopItems = ({ columns = 4, pageSize = 12 }) => {
     useEffect(() => {
         let params;
         if (query) {
-            if (query.page) {
+            if (query.page && query.brand) {
+                params = {
+                    'brands.slug': query.brand,
+                    _start: page * pageSize,
+                    _limit: pageSize,
+                };
+            } else if (query.page) {
                 params = {
                     _start: page * pageSize,
+                    _limit: pageSize,
+                };
+            } else if (query.brand) {
+                params = {
+                    'brands.slug': query.brand,
                     _limit: pageSize,
                 };
             } else {

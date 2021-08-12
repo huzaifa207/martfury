@@ -93,6 +93,7 @@ class ProductRepository {
             .then((response) => {
                 if (response.data) {
                     if (response.data.length > 0) {
+                        console.log(response.data);
                         return response.data[0];
                     }
                 } else {
