@@ -10,7 +10,7 @@ const TechnologyPromotions = () => (
                         <a className="ps-collection">
                             <img
                                 src="/static/img/promotions/home-10/1.jpg"
-                                alt="martfury"
+                                alt="nexusberry"
                             />
                         </a>
                     </Link>
@@ -20,7 +20,7 @@ const TechnologyPromotions = () => (
                         <a className="ps-collection">
                             <img
                                 src="/static/img/promotions/home-10/2.jpg"
-                                alt="martfury"
+                                alt="nexusberry"
                             />
                         </a>
                     </Link>

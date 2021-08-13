@@ -27,7 +27,7 @@ const VendorMileStone = () => (
                         </ul>
                     </div>
                     <div className="ps-block__right">
-                        <img src="/static/img/vendor/milestone-1.png" alt="martfury" />
+                        <img src="/static/img/vendor/milestone-1.png" alt="nexusberry" />
                     </div>
                     <div className="ps-block__number">
                         <span>1</span>
@@ -50,7 +50,7 @@ const VendorMileStone = () => (
                         </ul>
                     </div>
                     <div className="ps-block__right">
-                        <img src="/static/img/vendor/milestone-2.png" alt="martfury" />
+                        <img src="/static/img/vendor/milestone-2.png" alt="nexusberry" />
                     </div>
                     <div className="ps-block__number">
                         <span>2</span>
@@ -73,7 +73,7 @@ const VendorMileStone = () => (
                         </ul>
                     </div>
                     <div className="ps-block__right">
-                        <img src="/static/img/vendor/milestone-3.png" alt="martfury" />
+                        <img src="/static/img/vendor/milestone-3.png" alt="nexusberry" />
                     </div>
                     <div className="ps-block__number">
                         <span>3</span>
@@ -96,7 +96,7 @@ const VendorMileStone = () => (
                         </ul>
                     </div>
                     <div className="ps-block__right">
-                        <img src="/static/img/vendor/milestone-4.png" alt="martfury" />
+                        <img src="/static/img/vendor/milestone-4.png" alt="nexusberry" />
                     </div>
                     <div className="ps-block__number">
                         <span>4</span>

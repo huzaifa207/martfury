@@ -6,19 +6,19 @@ const FooterCopyright = () => (
         <p>
             <span>We Using Safe Payment For:</span>
             <a href="#">
-                <img src="/static/img/payment-method/1.jpg" alt="Martfury" />
+                <img src="/static/img/payment-method/1.jpg" alt="nexusberry" />
             </a>
             <a href="#">
-                <img src="/static/img/payment-method/2.jpg" alt="Martfury" />
+                <img src="/static/img/payment-method/2.jpg" alt="nexusberry" />
             </a>
             <a href="#">
-                <img src="/static/img/payment-method/3.jpg" alt="Martfury" />
+                <img src="/static/img/payment-method/3.jpg" alt="nexusberry" />
             </a>
             <a href="#">
-                <img src="/static/img/payment-method/4.jpg" alt="Martfury" />
+                <img src="/static/img/payment-method/4.jpg" alt="nexusberry" />
             </a>
             <a href="#">
-                <img src="/static/img/payment-method/5.jpg" alt="Martfury" />
+                <img src="/static/img/payment-method/5.jpg" alt="nexusberry" />
             </a>
         </p>
     </div>

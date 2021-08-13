@@ -49,7 +49,7 @@ const StoreList2 = () => (
                             </div>
                             <div className="ps-block__author">
                                 <a className="ps-block__user" href="#">
-                                    <img src="/static/img/vendor/store/vendor-150x150.jpg" alt="martfury" />
+                                    <img src="/static/img/vendor/store/vendor-150x150.jpg" alt="nexusberry" />
                                 </a>
                                 <a className="ps-btn" href="store-detail.html">
                                     Visit Store
@@ -79,7 +79,7 @@ const StoreList2 = () => (
                             </div>
                             <div className="ps-block__author">
                                 <a className="ps-block__user" href="#">
-                                    <img src="/static/img/vendor/store/vendor-150x150.jpg" alt="martfury" />
+                                    <img src="/static/img/vendor/store/vendor-150x150.jpg" alt="nexusberry" />
                                 </a>
                                 <a className="ps-btn" href="store-detail.html">
                                     Visit Store
@@ -109,7 +109,7 @@ const StoreList2 = () => (
                             </div>
                             <div className="ps-block__author">
                                 <a className="ps-block__user" href="#">
-                                    <img src="/static/img/vendor/store/vendor-150x150.jpg" alt="martfury" />
+                                    <img src="/static/img/vendor/store/vendor-150x150.jpg" alt="nexusberry" />
                                 </a>
                                 <a className="ps-btn" href="store-detail.html">
                                     Visit Store
@@ -139,7 +139,7 @@ const StoreList2 = () => (
                             </div>
                             <div className="ps-block__author">
                                 <a className="ps-block__user" href="#">
-                                    <img src="/static/img/vendor/store/vendor-150x150.jpg" alt="martfury" />
+                                    <img src="/static/img/vendor/store/vendor-150x150.jpg" alt="nexusberry" />
                                 </a>
                                 <a className="ps-btn" href="store-detail.html">
                                     Visit Store

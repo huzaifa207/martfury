@@ -53,7 +53,7 @@ const HeaderMarketPlace4 = () => {
                             <a className="ps-logo">
                                 <img
                                     src="/static/img/logo_light.png"
-                                    alt="martfury"
+                                    alt="nexusberry"
                                 />
                             </a>
                         </Link>

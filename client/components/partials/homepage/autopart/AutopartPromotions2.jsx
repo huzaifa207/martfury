@@ -6,12 +6,12 @@ const AutopartPromotions2 = () => (
             <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                     <a className="ps-collection mb-30" href="#">
-                        <img src="/static/img/promotions/home-2-1.jpg" alt="martfury" />
+                        <img src="/static/img/promotions/home-2-1.jpg" alt="nexusberry" />
                     </a>
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                     <a className="ps-collection mb-30" href="#">
-                        <img src="/static/img/promotions/home-2-2.jpg" alt="martfury" />
+                        <img src="/static/img/promotions/home-2-2.jpg" alt="nexusberry" />
                     </a>
                 </div>
             </div>

@@ -15,8 +15,10 @@ const nextSettings = {
     },
     // Change your site title here
     env: {
-        title: 'Martfury',
-        titleDescription: 'Multipurpose Marketplace React Ecommerce Template',
+        // title: 'Martfury',
+        // titleDescription: 'Multipurpose Marketplace React Ecommerce Template',
+        title: 'Nexusberry',
+        titleDescription: 'Marketplace'
     },
 };
 
