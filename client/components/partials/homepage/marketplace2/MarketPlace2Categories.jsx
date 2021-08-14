@@ -12,7 +12,7 @@ const MarketPlace2Categories = () => (
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">
                         <div className="ps-block--category-2" data-mh="categories">
                             <div className="ps-block__thumbnail">
-                                <img src="/static/img/categories/shop/5.jpg" alt="martfury" />
+                                <img src="/static/img/categories/shop/5.jpg" alt="nexusberry" />
                             </div>
                             <div className="ps-block__content">
                                 <h4>Electronics</h4>
@@ -54,7 +54,7 @@ const MarketPlace2Categories = () => (
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">
                         <div className="ps-block--category-2" data-mh="categories">
                             <div className="ps-block__thumbnail">
-                                <img src="/static/img/categories/shop/1.jpg" alt="martfury" />
+                                <img src="/static/img/categories/shop/1.jpg" alt="nexusberry" />
                             </div>
                             <div className="ps-block__content">
                                 <h4>Clothings</h4>
@@ -91,7 +91,7 @@ const MarketPlace2Categories = () => (
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">
                         <div className="ps-block--category-2" data-mh="categories">
                             <div className="ps-block__thumbnail">
-                                <img src="/static/img/categories/shop/9.jpg" alt="martfury" />
+                                <img src="/static/img/categories/shop/9.jpg" alt="nexusberry" />
                             </div>
                             <div className="ps-block__content">
                                 <h4>Computers</h4>
@@ -128,7 +128,7 @@ const MarketPlace2Categories = () => (
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">
                         <div className="ps-block--category-2" data-mh="categories">
                             <div className="ps-block__thumbnail">
-                                <img src="/static/img/categories/shop/2.jpg" alt="martfury" />
+                                <img src="/static/img/categories/shop/2.jpg" alt="nexusberry" />
                             </div>
                             <div className="ps-block__content">
                                 <h4>Home & Kitchen</h4>
@@ -165,7 +165,7 @@ const MarketPlace2Categories = () => (
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">
                         <div className="ps-block--category-2" data-mh="categories">
                             <div className="ps-block__thumbnail">
-                                <img src="/static/img/categories/shop/10.jpg" alt="martfury" />
+                                <img src="/static/img/categories/shop/10.jpg" alt="nexusberry" />
                             </div>
                             <div className="ps-block__content">
                                 <h4>Healthy & Beauty</h4>
@@ -202,7 +202,7 @@ const MarketPlace2Categories = () => (
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">
                         <div className="ps-block--category-2" data-mh="categories">
                             <div className="ps-block__thumbnail">
-                                <img src="/static/img/categories/shop/6.jpg" alt="martfury" />
+                                <img src="/static/img/categories/shop/6.jpg" alt="nexusberry" />
                             </div>
                             <div className="ps-block__content">
                                 <h4>Jewelry & Watch</h4>

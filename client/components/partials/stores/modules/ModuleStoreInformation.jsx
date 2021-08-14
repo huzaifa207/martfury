@@ -8,7 +8,7 @@ const ModuleStoreInformation = ({ store }) => {
                 <div className="ps-block__thumbnail">
                     <img
                         src="/static/img/vendor/vendor-store.jpg"
-                        alt="martfury"
+                        alt="nexusberry"
                     />
                 </div>
                 <div className="ps-block__container">

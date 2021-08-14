@@ -41,8 +41,8 @@ const MarketPlaceDealOfDay = ({ collectionSlug }) => {
     }
 
     return (
-        <div className="ps-deal-of-day">
-            <div className="ps-container">
+        <div className="ps-deal-of-day container">
+            <div>
                 <div className="ps-section__header">
                     <div className="ps-block--countdown-deal">
                         <div className="ps-block__left">

@@ -7,7 +7,7 @@ const PostComments = () => (
             <div className="ps-block__thumbnail">
                 <img
                     src="http://1.gravatar.com/avatar/af7935f33b10cec23f77b8d9717641df?s=70&amp;d=mm&amp;r=g"
-                    alt="martfury"
+                    alt="nexusberry"
                 />
             </div>
             <div className="ps-block__content">
@@ -28,7 +28,7 @@ const PostComments = () => (
             <div className="ps-block__thumbnail">
                 <img
                     src="http://2.gravatar.com/avatar/b2c1febfd11117eef66c351c1d4c10f1?s=70&amp;d=mm&amp;r=g"
-                    alt="martfury"
+                    alt="nexusberry"
                 />
             </div>
             <div className="ps-block__content">
@@ -47,7 +47,7 @@ const PostComments = () => (
                     <div className="ps-block__thumbnail">
                         <img
                             src="http://2.gravatar.com/avatar/25df3939b2e33bd19783411afd5bc6e3?s=70&amp;d=mm&amp;r=g"
-                            alt="martfury"
+                            alt="nexusberry"
                         />
                     </div>
                     <div className="ps-block__content">

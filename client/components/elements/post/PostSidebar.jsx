@@ -8,7 +8,7 @@ const PostGrid = ({ data }) => {
                 <Link href="/post/[pid]" as={`/post/${data.id}`}>
                     <a className="ps-post__overlay"></a>
                 </Link>
-                <img src={data.thumbnail} alt="martfury" />
+                <img src={data.thumbnail} alt="nexusberry" />
                 {data && data.badge ? (
                     <div className="ps-post__badge">
                         <i className={data.badge}></i>

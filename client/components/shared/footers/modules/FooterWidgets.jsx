@@ -6,28 +6,28 @@ const FooterWidgets = () => (
         <aside className="widget widget_footer widget_contact-us">
             <h4 className="widget-title">Contact us</h4>
             <div className="widget_content">
-                <h3>info@estorexl.eu</h3>
+                <a href="mailto:info@nexusberry.com">info@nexusberry.com</a>
                 <p>
-                    Sadelgatan SE-213 77 Malmö
+                    6-D, Main Boulevard, Faisal Town Town, Lahore, Pakistan.
                 </p>
                 <ul className="ps-list--social">
                     <li>
-                        <a className="facebook" target="_blank" href="https://www.facebook.com/estorexlsv">
+                        <a className="facebook" target="_blank" href="https://www.facebook.com/nexusberry?_rdc=1&_rdr">
                             <i className="fa fa-facebook"></i>
                         </a>
                     </li>
-                    {/* <li>
-                        <a className="twitter" href="#">
+                    <li>
+                        <a className="twitter" target="_blank" href="https://twitter.com/nexusberrypk">
                             <i className="fa fa-twitter"></i>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a className="google-plus" href="#">
                             <i className="fa fa-google-plus"></i>
                         </a>
                     </li> */}
                     <li>
-                        <a className="instagram" target='_blank' href="https://www.facebook.com/estorexlsv">
+                        <a className="instagram" target='_blank' href="https://www.instagram.com/nexusberry/">
                             <i className="fa fa-instagram"></i>
                         </a>
                     </li>
@@ -59,7 +59,7 @@ const FooterWidgets = () => (
                     </Link>
                 </li>
                 <li>
-                    <Link href="/page/faqs">
+                    <Link href="/page/blank">
                         <a>FAQs</a>
                     </Link>
                 </li>
@@ -69,7 +69,7 @@ const FooterWidgets = () => (
             <h4 className="widget-title">Company</h4>
             <ul className="ps-list--link">
                 <li>
-                    <Link href="/page/about-us">
+                    <Link href="/page/blank">
                         <a>About Us</a>
                     </Link>
                 </li>
@@ -94,12 +94,12 @@ const FooterWidgets = () => (
             <h4 className="widget-title">Bussiness</h4>
             <ul className="ps-list--link">
                 <li>
-                    <Link href="/page/about-us">
+                    <Link href="/page/blank">
                         <a>Our Press</a>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/account/checkout">
+                    <Link href="/page/blank">
                         <a>Checkout</a>
                     </Link>
                 </li>

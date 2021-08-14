@@ -5,8 +5,8 @@ const MainHead = () => (
     <Head>
         <title>Martfury - React eCommerce Template</title>
         <link rel="shortcut icon" href="/static/img/favi.png" />
-        <link rel="icon" href="/static/img/favi.png" sizes="32x32" />
-        <link rel="icon" href="/static/img/favi.png" sizes="192x192" />
+        {/* <link rel="icon" href="/static/img/favi.png"  /> */}
+        <link rel="icon" href="https://nexusberry.com/wp-content/uploads/2019/05/cropped-download-32x32.jpg" />
         <link rel="apple-touch-icon-precomposed" href="/static/img/favi.png" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

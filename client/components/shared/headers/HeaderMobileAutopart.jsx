@@ -43,7 +43,7 @@ class HeaderMobileAutopart extends Component {
                             <a className="ps-logo">
                                 <img
                                     src="/static/img/logo-autopart.png"
-                                    alt="martfury"
+                                    alt="nexusberry"
                                 />
                             </a>
                         </Link>

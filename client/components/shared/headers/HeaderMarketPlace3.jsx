@@ -37,7 +37,7 @@ const HeaderMarketPlace3 = () => {
                                 q
                                 <img
                                     src="/static/img/logo_light.png"
-                                    alt="martfury"
+                                    alt="nexusberry"
                                 />
                             </a>
                         </Link>

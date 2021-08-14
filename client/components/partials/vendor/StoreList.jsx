@@ -108,7 +108,7 @@ const StoreList = () => (
                                                     href="#">
                                                     <img
                                                         src="/static/img/vendor/store/user/3.jpg"
-                                                        alt="martfury"
+                                                        alt="nexusberry"
                                                     />
                                                 </a>
                                                 <a className="ps-btn" href="#">
@@ -156,7 +156,7 @@ const StoreList = () => (
                                                     href="#">
                                                     <img
                                                         src="/static/img/vendor/store/user/4.jpg"
-                                                        alt="martfury"
+                                                        alt="nexusberry"
                                                     />
                                                 </a>
                                                 <a className="ps-btn" href="#">
@@ -204,7 +204,7 @@ const StoreList = () => (
                                                     href="#">
                                                     <img
                                                         src="/static/img/vendor/store/user/5.jpg"
-                                                        alt="martfury"
+                                                        alt="nexusberry"
                                                     />
                                                 </a>
                                                 <a className="ps-btn" href="#">
@@ -252,7 +252,7 @@ const StoreList = () => (
                                                     href="#">
                                                     <img
                                                         src="/static/img/vendor/store/user/5.jpg"
-                                                        alt="martfury"
+                                                        alt="nexusberry"
                                                     />
                                                 </a>
                                                 <a className="ps-btn" href="#">

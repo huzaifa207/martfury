@@ -17,12 +17,12 @@ const ShopSidebarPage = () => {
             url: '/',
         },
         {
-            text: 'Shop Sidebar',
+            text: 'Shop',
         },
     ];
     return (
         <>
-            <PageContainer footer={<FooterDefault />} title="Shop Sidebar">
+            <PageContainer footer={<FooterDefault />} title="Shop">
                 <BreadCrumb breacrumb={breadCrumb} />
                 <div className="ps-page--shop" id="shop-sidebar">
                     <div className="container">
@@ -33,10 +33,10 @@ const ShopSidebarPage = () => {
                                 <WidgetShopFilterByPriceRange />
                             </div>
                             <div className="ps-layout__right">
-                                <div className="ps-page__header">
-                                    <h1>Shop Sidebar</h1>
+                                {/* <div className="ps-page__header"> */}
+                                    {/* <h1>Shop Sidebar</h1> */}
                                     {/* <ShopSidebarBanner /> */}
-                                </div>
+                                {/* </div> */}
                                 <ProductGroupByCarousel
                                     collectionSlug="shop-best-seller-items"
                                     title="Best Sale Items"
