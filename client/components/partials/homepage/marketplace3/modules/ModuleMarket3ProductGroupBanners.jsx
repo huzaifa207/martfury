@@ -12,7 +12,7 @@ const ModuleMarket3ProductGroupBanners = ({ type }) => {
                         <a>
                             <img
                                 src="/static/img/promotions/home-5/electronic-1.jpg"
-                                alt="martfury"
+                                alt="nexusberry"
                             />
                         </a>
                     </Link>
@@ -22,7 +22,7 @@ const ModuleMarket3ProductGroupBanners = ({ type }) => {
                         <a>
                             <img
                                 src="/static/img/promotions/home-5/electronic-2.jpg"
-                                alt="martfury"
+                                alt="nexusberry"
                             />
                         </a>
                     </Link>
@@ -38,7 +38,7 @@ const ModuleMarket3ProductGroupBanners = ({ type }) => {
                         <a>
                             <img
                                 src="/static/img/promotions/home-5/clothing-1.jpg"
-                                alt="martfury"
+                                alt="nexusberry"
                             />
                         </a>
                     </Link>
@@ -48,7 +48,7 @@ const ModuleMarket3ProductGroupBanners = ({ type }) => {
                         <a>
                             <img
                                 src="/static/img/promotions/home-5/clothing-2.jpg"
-                                alt="martfury"
+                                alt="nexusberry"
                             />
                         </a>
                     </Link>
@@ -64,7 +64,7 @@ const ModuleMarket3ProductGroupBanners = ({ type }) => {
                         <a>
                             <img
                                 src="/static/img/promotions/home-5/kitchen-1.jpg"
-                                alt="martfury"
+                                alt="nexusberry"
                             />
                         </a>
                     </Link>
@@ -74,7 +74,7 @@ const ModuleMarket3ProductGroupBanners = ({ type }) => {
                         <a>
                             <img
                                 src="/static/img/promotions/home-5/kitchen-2.jpg"
-                                alt="martfury"
+                                alt="nexusberry"
                             />
                         </a>
                     </Link>

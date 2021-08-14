@@ -62,7 +62,7 @@ const AutopartCategories = () => {
                                 <div className="ps-block__thumbnail">
                                     <img
                                         src={category.thumbnail}
-                                        alt="martfury"
+                                        alt="nexusberry"
                                     />
                                 </div>
                                 <div className="ps-block__content">

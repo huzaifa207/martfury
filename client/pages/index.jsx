@@ -39,53 +39,25 @@ const HomepageDefaultPage = () => {
     ];
 
     return (
-        // <PageContainer header={headers} title="Multipurpose Marketplace React Ecommerce Template">
-        //     <MartketPlace3Banner />
-        //       <main id="homepage-1">
-        //           <HomeDefaultBanner />
-        //          <SiteFeatures />
-        //          <HomeDefaultDealOfDay collectionSlug="deal-of-the-day" />
-        //          <HomeAdsColumns />
-        //          <HomeDefaultTopCategories />
-        //          <HomeDefaultProductListing
-        //              collectionSlug="consumer-electronics"
-        //              title="Consumer Electronics"
-        //          />
-        //           <HomeDefaultProductListing
-        //              collectionSlug="clothings"
-        //              title="Clothings"
-        //          />
-        //         <HomeDefaultProductListing
-        //              collectionSlug="garden-and-kitchen"
-        //              title="Garden & Kitchen"
-        //          />
-        //         <HomeAds />
-        //          <DownLoadApp />
-        //          <NewArrivals collectionSlug="new-arrivals-products" />
-        //          <Newletters />
-        // </main>
-        // </PageContainer>
-
-        // ------------------------------------------------------------------------
-
         <PageContainer
-            title="Multipurpose Marketplace React Ecommerce Template">
+            title="">
             <main id="homepage-5">
-                <div className="container">
+                <div>
                     <MartketPlace3Banner />
                     <div
                         style={{
                             margin: '50px 0px 0px 0px',
                             backgroundColor: 'white',
                             padding: '20px 0px 20px 0px',
+                            
                         }}>
                         <MarketPlaceSiteFeatures />
                     </div>
                     <MarketPlace3SearchTrending />
                     <MarketPlaceDealOfDay collectionSlug="deal-of-the-day" />
                     {/* <MarketPlace3Promotions /> */}
-                    <div className="ps-product-box">
-                        <MarketPlace3Promotions />
+                    <div className="ps-product-box container">
+                    <MarketPlace3Promotions />
                         <Market3ProductGroup
                             heading={{
                                 icon: 'icon-laundry',

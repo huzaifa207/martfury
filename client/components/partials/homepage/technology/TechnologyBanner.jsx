@@ -23,7 +23,7 @@ const TechnologyBanner = () => {
                     }}>
                     <img
                         src="/static/img/slider/home-10/1.jpg"
-                        alt="martfury"
+                        alt="nexusberry"
                     />
                     <div className="ps-banner__content">
                         <h4>Weekend Promotions</h4>
@@ -44,7 +44,7 @@ const TechnologyBanner = () => {
                     }}>
                     <img
                         src="/static/img/slider/home-10/2.jpg"
-                        alt="martfury"
+                        alt="nexusberry"
                     />
                     <div className="ps-banner__content">
                         <h4>Weekend Promotions</h4>

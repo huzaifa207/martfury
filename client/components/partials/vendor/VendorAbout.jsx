@@ -15,7 +15,7 @@ const VendorAbout = () => (
                     <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
                         <div className="ps-block--icon-box-2">
                             <div className="ps-block__thumbnail">
-                                <img src="/static/img/icons/vendor-1.png" alt="martfury" />
+                                <img src="/static/img/icons/vendor-1.png" alt="nexusberry" />
                             </div>
                             <div className="ps-block__content">
                                 <h4>Low Fees</h4>
@@ -32,7 +32,7 @@ const VendorAbout = () => (
                     <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
                         <div className="ps-block--icon-box-2">
                             <div className="ps-block__thumbnail">
-                                <img src="/static/img/icons/vendor-2.png" alt="martfury" />
+                                <img src="/static/img/icons/vendor-2.png" alt="nexusberry" />
                             </div>
                             <div className="ps-block__content">
                                 <h4>Powerful Tools</h4>
@@ -49,7 +49,7 @@ const VendorAbout = () => (
                     <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
                         <div className="ps-block--icon-box-2">
                             <div className="ps-block__thumbnail">
-                                <img src="/static/img/icons/vendor-3.png" alt="martfury" />
+                                <img src="/static/img/icons/vendor-3.png" alt="nexusberry" />
                             </div>
                             <div className="ps-block__content">
                                 <h4>Support 24/7</h4>

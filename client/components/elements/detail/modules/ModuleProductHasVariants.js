@@ -247,7 +247,7 @@ const ModuleProductHasVariants = ({ ecomerce, currency, product }) => {
                 </div>
                 {priceArea}
                 <ModuleProductDetailDescription product={product} />
-                var: {variants}
+                {variants}
                 <div className="ps-product__shopping">
                     <figure>
                         <figcaption>Quantity</figcaption>

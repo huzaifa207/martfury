@@ -45,7 +45,7 @@ const OrganicBlog = () => (
                         <div className="ps-post">
                             <div className="ps-post__thumbnail">
                                 <a className="ps-post__overlay" href="blog-detail.html"></a>
-                                <img src="/static/img/blog/organic/1.jpg" alt="martfury" />
+                                <img src="/static/img/blog/organic/1.jpg" alt="nexusberry" />
                             </div>
                             <div className="ps-post__content">
                                 <a className="ps-post__meta" href="#">
@@ -67,7 +67,7 @@ const OrganicBlog = () => (
                                     <i className="icon-volume-high"></i>
                                 </div>
                                 <a className="ps-post__overlay" href="blog-detail.html"></a>
-                                <img src="/static/img/blog/organic/2.jpg" alt="martfury" />
+                                <img src="/static/img/blog/organic/2.jpg" alt="nexusberry" />
                             </div>
                             <div className="ps-post__content">
                                 <a className="ps-post__meta" href="#">
@@ -92,7 +92,7 @@ const OrganicBlog = () => (
                                     <i className="icon-volume-high"></i>
                                 </div>
                                 <a className="ps-post__overlay" href="blog-detail.html"></a>
-                                <img src="/static/img/blog/organic/3.jpg" alt="martfury" />
+                                <img src="/static/img/blog/organic/3.jpg" alt="nexusberry" />
                             </div>
                             <div className="ps-post__content">
                                 <a className="ps-post__meta" href="#">
