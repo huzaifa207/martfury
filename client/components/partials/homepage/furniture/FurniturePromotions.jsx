@@ -13,12 +13,12 @@ const FurniturePromotions = () => (
             <div className="row">
                 <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 ">
                     <a className="ps-collection" href="#">
-                        <img src="/static/img/promotions/home-8/1.jpg" alt="martfury" />
+                        <img src="/static/img/promotions/home-8/1.jpg" alt="nexusberry" />
                     </a>
                 </div>
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
                     <a className="ps-collection" href="#">
-                        <img src="/static/img/promotions/home-8/2.jpg" alt="martfury" />
+                        <img src="/static/img/promotions/home-8/2.jpg" alt="nexusberry" />
                     </a>
                 </div>
             </div>

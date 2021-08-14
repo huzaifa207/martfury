@@ -12,7 +12,7 @@ const ShopCarouselBanner = () => {
                     <Link href="/shop">
                         <img
                             src="/static/img/slider/shop-default/1.jpg"
-                            alt="martfury"
+                            alt="nexusberry"
                         />
                     </Link>
                 </div>
@@ -20,7 +20,7 @@ const ShopCarouselBanner = () => {
                     <Link href="/shop">
                         <img
                             src="/static/img/slider/shop-default/2.jpg"
-                            alt="martfury"
+                            alt="nexusberry"
                         />
                     </Link>
                 </div>

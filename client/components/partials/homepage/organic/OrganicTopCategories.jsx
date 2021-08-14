@@ -8,7 +8,7 @@ const OrganicTopCategories = () => (
                 <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 ">
                     <div className="ps-block--category">
                         <div className="ps-block__thumbnail">
-                            <img src="/static/img/categories/organic/1.jpg" alt="martfury" />
+                            <img src="/static/img/categories/organic/1.jpg" alt="nexusberry" />
                         </div>
                         <div className="ps-block__content">
                             <p>Milks &amp; Creams</p>
@@ -18,7 +18,7 @@ const OrganicTopCategories = () => (
                 <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 ">
                     <div className="ps-block--category">
                         <div className="ps-block__thumbnail">
-                            <img src="/static/img/categories/organic/2.jpg" alt="martfury" />
+                            <img src="/static/img/categories/organic/2.jpg" alt="nexusberry" />
                         </div>
                         <div className="ps-block__content">
                             <p>Fruits</p>
@@ -28,7 +28,7 @@ const OrganicTopCategories = () => (
                 <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 ">
                     <div className="ps-block--category">
                         <div className="ps-block__thumbnail">
-                            <img src="/static/img/categories/organic/3.jpg" alt="martfury" />
+                            <img src="/static/img/categories/organic/3.jpg" alt="nexusberry" />
                         </div>
                         <div className="ps-block__content">
                             <p>Vegetables</p>
@@ -38,7 +38,7 @@ const OrganicTopCategories = () => (
                 <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 ">
                     <div className="ps-block--category">
                         <div className="ps-block__thumbnail">
-                            <img src="/static/img/categories/organic/4.jpg" alt="martfury" />
+                            <img src="/static/img/categories/organic/4.jpg" alt="nexusberry" />
                         </div>
                         <div className="ps-block__content">
                             <p>Ocean Foods</p>
@@ -48,7 +48,7 @@ const OrganicTopCategories = () => (
                 <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 ">
                     <div className="ps-block--category">
                         <div className="ps-block__thumbnail">
-                            <img src="/static/img/categories/organic/5.jpg" alt="martfury" />
+                            <img src="/static/img/categories/organic/5.jpg" alt="nexusberry" />
                         </div>
                         <div className="ps-block__content">
                             <p>Butters &amp; Eggs</p>
@@ -58,7 +58,7 @@ const OrganicTopCategories = () => (
                 <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 ">
                     <div className="ps-block--category">
                         <div className="ps-block__thumbnail">
-                            <img src="/static/img/categories/organic/6.jpg" alt="martfury" />
+                            <img src="/static/img/categories/organic/6.jpg" alt="nexusberry" />
                         </div>
                         <div className="ps-block__content">
                             <p>Fresh Meats</p>

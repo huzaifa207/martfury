@@ -3,7 +3,7 @@ import React from 'react';
 const PostAuthor = () => (
     <div className="ps-block--author">
         <div className="ps-block__thumbnail">
-            <img src="img/users/1.png" alt="martfury" />
+            <img src="img/users/1.png" alt="nexusberry" />
         </div>
         <div className="ps-block__content">
             <h4>drfurion</h4>

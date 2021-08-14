@@ -13,10 +13,10 @@ const ContactInfo = () => (
                         <div className="ps-block--contact-info">
                             <h4>Contact Directly</h4>
                             <p>
-                                <a href="mailto:contact@martfury.com">
-                                    contact@martfury.com
+                                <a href="mailto:info@nexusberry.com">
+                                    info@nexusberry.com
                                 </a>
-                                <span>(+004) 912-3548-07</span>
+                                <span>+92 321 1848307</span>
                             </p>
                         </div>
                     </div>
@@ -25,8 +25,7 @@ const ContactInfo = () => (
                             <h4>Head Quater</h4>
                             <p>
                                 <span>
-                                    17 Queen St, Southbank, Melbourne 10560,
-                                    Australia
+                                    6-D, Main Boulevard, Faisal Town Town, Lahore, Pakistan.
                                 </span>
                             </p>
                         </div>
@@ -36,7 +35,7 @@ const ContactInfo = () => (
                             <h4>Work With Us</h4>
                             <p>
                                 <span>Send your CV to our email:</span>
-                                <a href="#">career@martfury.com</a>
+                                <a href="mailto:info@nexusberry.com">info@nexusberry.com</a>
                             </p>
                         </div>
                     </div>
@@ -44,8 +43,8 @@ const ContactInfo = () => (
                         <div className="ps-block--contact-info">
                             <h4>Customer Service</h4>
                             <p>
-                                <a href="#">customercare@martfury.com</a>
-                                <span>(800) 843-2446</span>
+                                <a href="mailto:info@nexusberry.com">info@nexusberry.com</a>
+                                <span>+92 321 1848307</span>
                             </p>
                         </div>
                     </div>
@@ -53,8 +52,8 @@ const ContactInfo = () => (
                         <div className="ps-block--contact-info">
                             <h4>Media Relations</h4>
                             <p>
-                                <a href="#">media@martfury.com</a>
-                                <span>(801) 947-3564</span>
+                                <a href="mailto:info@nexusberry.com">info@nexusberry.com</a>
+                                <span>+92 321 1848307</span>
                             </p>
                         </div>
                     </div>
@@ -62,8 +61,8 @@ const ContactInfo = () => (
                         <div className="ps-block--contact-info">
                             <h4>Vendor Support</h4>
                             <p>
-                                <a href="#">vendorsupport@martfury.com</a>
-                                <span>(801) 947-3100</span>
+                                <a href="mailto:info@nexusberry.com">info@nexusberry.com</a>
+                                <span>+92 321 1848307</span>
                             </p>
                         </div>
                     </div>

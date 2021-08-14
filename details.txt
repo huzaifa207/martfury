@@ -1,0 +1,89 @@
+
+useProduct => view
+useEcommerc => path("/")
+
+detail page martfury:  
+1) pages/product/[pid].jsx
+2) ProductDetailFullWidth
+
+collection page: 
+1) pages/shop/index
+2) left layout => WidegetShopCategories, Brands, Price
+
+cart & checkout: 
+1) pages/acount/shopping-cart
+2) pages/account/checkout
+
+customization: 
+1) pages/shop/indes.jsx => default
+2) pages/shop/side-banner.jsx => index
+
+
+-----------------------------------------------------------------------------------------------
+
+used components:
+header:
+1) HeaderMarketPlace
+
+HeaderMarketPlace:
+1) CurrencyDropdown
+2) LanguageSwicher
+3) Menu
+4) SearchHeader
+5) ElectronicHeaderActions
+
+footer:
+1) FooterFullwidth
+
+FooterFullwidth: 
+1) FooterWidgets
+2) FooterLinks
+3) FooterCopyright
+
+home page:
+1) PageContainer
+2) MartketPlace3Banner
+3) MarketPlaceSiteFeatures
+4) MarketPlace3SearchTrending
+5) MarketPlaceDealOfDay
+6) MarketPlace3Promotions
+7) Market3ProductGroup
+8) ModuleMarket3ProductGroupBanners
+
+detail page: 
+1) PageContainer
+2) BreadCrumb
+3) ProductWidgets
+4) CustomerBought
+5) RelatedProduct
+6) Newsletters
+7) ProductDetailVariants => product layout
+8) SkeletonProductDetail => product layout
+
+ProductDetailVariants:
+1) ModuleProductHasVariants
+2) DefaultDescription
+3) ThumbnailDefault
+4) ModuleDetailTopInformation
+5) ModuleProductDetailDescription
+6) ModuleDetailShoppingActions
+7) ModuleProductDetailSpecification
+8) ModuleProductDetailSharing
+9) ModuleDetailActionsMobile
+
+cart page: 
+1) pages/acount/shopping-cart
+
+checkout: 
+1) pages/account/checkout
+
+login:
+1) pages/account/login
+
+register: 
+1) pages/account/register
+
+
+
+--------------------------------------------------------------------------------------------
+1) blank page links

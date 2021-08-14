@@ -24,7 +24,7 @@ const GardenAndKitchen = ({ data }) => (
                     if (category.type === 'large') {
                         return (
                             <div className="ps-block__banner" key={category.text}>
-                                <img src={category.imagePath} alt="martfury" />
+                                <img src={category.imagePath} alt="nexusberry" />
                             </div>
                         );
                     } else {
@@ -33,7 +33,7 @@ const GardenAndKitchen = ({ data }) => (
                                 <Link href="/shop">
                                     <a className="ps-block__overlay"></a>
                                 </Link>
-                                <img src={category.imagePath} alt="martfury" />
+                                <img src={category.imagePath} alt="nexusberry" />
                                 <p>{category.text} </p>
                                 <span>{category.item} Items</span>
                             </div>

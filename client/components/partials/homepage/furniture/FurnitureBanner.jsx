@@ -22,7 +22,7 @@ const FurnitureBanner = () => {
                         }}>
                         <img
                             src="/static/img/slider/home-8/1.jpg"
-                            alt="martfury"
+                            alt="nexusberry"
                         />
                         <div className="ps-banner__content">
                             <h4>Limit Edition</h4>
@@ -42,7 +42,7 @@ const FurnitureBanner = () => {
                         }}>
                         <img
                             src="/static/img/slider/home-8/2.jpg"
-                            alt="martfury"
+                            alt="nexusberry"
                         />
                         <div className="ps-banner__content">
                             <h4>Version 2018</h4>
