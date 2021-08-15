@@ -51,10 +51,10 @@ const PaymentSuccessPage = () => {
                                                     any questions about your
                                                     purchase, email us at{' '}
                                                     <a
-                                                        href="mailto@contact@martfury.com"
+                                                        href="mailto@contact@nexusberry.com"
                                                         className="ps-highlight">
                                                         <strong>
-                                                            contact@martfury.com
+                                                            contact@nexusberry.com
                                                         </strong>
                                                     </a>
                                                 </p>

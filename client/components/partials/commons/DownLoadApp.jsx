@@ -13,7 +13,7 @@ const DownloadApp = () => (
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
                             <div className="ps-block__content">
-                                <h3>Download Martfury App Now!</h3>
+                                <h3>Download NexusBerry App Now!</h3>
                                 <p>
                                     Shopping fastly and easily more with our app. Get a link to
                                     download the app on your phone

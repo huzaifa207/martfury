@@ -5,7 +5,7 @@ const FurniturePromotions = () => (
         <div className="container">
             <div className="ps-section__header">
                 <h3>
-                    WELCOME TO <span>MARTFURY</span> – CUSTOM FURNITURE
+                    WELCOME TO <span>NEXUSBERRY</span> – CUSTOM FURNITURE
                     <span>SHOPPING STORE ONLINE</span>
                 </h3>
                 <p>Designer furniture. Locally designed. Globally Crafted.</p>
