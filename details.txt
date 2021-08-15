@@ -2,7 +2,7 @@
 useProduct => view
 useEcommerc => path("/")
 
-detail page martfury:  
+detail page NexusBerry:  
 1) pages/product/[pid].jsx
 2) ProductDetailFullWidth
 

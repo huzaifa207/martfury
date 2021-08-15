@@ -61,7 +61,7 @@ const HeaderFurniture = () => {
                         <ul className="navigation__extra">
                             <li>
                                 <Link href="/page/blank">
-                                    <a>Sell on Martfury</a>
+                                    <a>Sell on NexusBerry</a>
                                 </Link>
                             </li>
                             <li>

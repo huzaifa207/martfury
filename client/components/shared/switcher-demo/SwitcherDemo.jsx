@@ -34,7 +34,7 @@ class SwicherDemo extends React.Component {
                     </button>
                     <div className="ps-container">
                         <div className="ps-section__header text-center">
-                            <h3>Martfury Theme Demos</h3>
+                            <h3>NexusBerry Theme Demos</h3>
                             <p>
                                 Check homepage demos, shop and single product
                                 page layouts!

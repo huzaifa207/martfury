@@ -87,7 +87,7 @@ const HeaderMarketPlace3 = () => {
                         <ul className="navigation__extra">
                             <li>
                                 <Link href="/vendor/become-a-vendor">
-                                    <a>Sell on Martfury</a>
+                                    <a>Sell on NexusBerry</a>
                                 </Link>
                             </li>
                             <li>

@@ -80,24 +80,24 @@ class ThumbnailHasVariant extends Component {
         });
 
         return (
-            <div className="ps-product__thumbnail" data-vertical="true">
+            <div className='ps-product__thumbnail' data-vertical='true'>
                 <figure>
-                    <div className="ps-wrapper">
+                    <div className='ps-wrapper'>
                         <Slider
                             {...gallerySetting}
-                            ref={(slider) => (this.slider1 = slider)}
+                            ref={slider => (this.slider1 = slider)}
                             asNavFor={this.state.variantCarousel}
-                            className="ps-product__gallery ps-carousel inside">
+                            className='ps-product__gallery ps-carousel inside'>
                             {product.images.map((variant, index) => (
-                                <div className="item" key={variant.id}>
+                                <div className='item' key={variant.id}>
                                     <a
-                                        href="#"
+                                        href='#'
                                         onClick={(e) =>
                                             this.handleOpenLightbox(e, index)
                                         }>
                                         <img
                                             src={`${baseUrl}${variant.url}`}
-                                            alt="martfury-image"
+                                            alt='nexusberry-image'
                                         />
                                     </a>
                                 </div>
@@ -114,12 +114,12 @@ class ThumbnailHasVariant extends Component {
                     vertical={true}
                     focusOnSelect={true}
                     {...variantSetting}
-                    className="ps-product__variants">
+                    className='ps-product__variants'>
                     {product.images.map((variant) => (
-                        <div className="item" key={variant.id}>
+                        <div className='item' key={variant.id}>
                             <img
                                 src={`${baseUrl}${variant.url}`}
-                                alt="martfury-image"
+                                alt='nexusberry-image'
                             />
                         </div>
                     ))}
