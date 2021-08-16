@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_product_quantity_product_quantities",
+  "info": {
+    "name": "Product-Quantity",
+    "icon": "cart-plus"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    }
+  }
+}
