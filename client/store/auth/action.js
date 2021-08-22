@@ -6,12 +6,20 @@ export const actionTypes = {
     CHECK_AUTHORIZATION: 'CHECK_AUTHORIZATION',
 };
 
-export function login() {
-    return { type: actionTypes.LOGIN_REQUEST };
+/**
+ *
+ * @param {identifier, password} creds
+ */
+export function login(creds) {
+    return { type: actionTypes.LOGIN_REQUEST, creds };
 }
 
-export function loginSuccess() {
-    return { type: actionTypes.LOGIN_SUCCESS };
+/**
+ *
+ * @param {email, username, token} currentUser
+ */
+export function loginSuccess(currentUser) {
+    return { type: actionTypes.LOGIN_SUCCESS, currentUser };
 }
 
 export function logOut() {
@@ -20,4 +28,8 @@ export function logOut() {
 
 export function logOutSuccess() {
     return { type: actionTypes.LOGOUT_SUCCESS };
+}
+
+export function checkAuthorization() {
+    return { type: actionTypes.CHECK_AUTHORIZATION };
 }
