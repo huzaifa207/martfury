@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import { login } from '../../../store/auth/action';
+import { login } from '~/store/auth/action';
 
 import { Form, Input, notification } from 'antd';
 import { connect } from 'react-redux';

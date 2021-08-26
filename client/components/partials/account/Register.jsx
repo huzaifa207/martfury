@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import { login } from '../../../store/auth/action';
+import { register } from '~/store/auth/action';
 
 import { Form, Input } from 'antd';
 import { connect } from 'react-redux';
@@ -9,27 +9,53 @@ import { connect } from 'react-redux';
 class Register extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            data: {
+                email: '',
+                username: '',
+                password: '',
+            },
+            errors: {},
+        };
+    }
+
+    static getDerivedStateFromProps(props) {
+        if (props.isLoggedIn === true) {
+            Router.push('/');
+        }
+        return false;
     }
 
     handleSubmit = (e) => {
-        e.preventDefault();
-        this.props.form.validateFields((err, values) => {
-            if (!err) {
-                this.props.dispatch(login());
-                Router.push('/account/login');
-            } else {
-            }
+        const { data } = this.state;
+        const username = data.email.substring(0, data.email.indexOf('@'));
+
+        data['username'] = username;
+        console.log(data);
+        this.props.register(data);
+    };
+
+    handleChange = (e) => {
+        this.setState({
+            data: {
+                ...this.state.data,
+                [e.target.id]: e.target.value,
+            },
+            errors: {
+                ...this.state.errors,
+                [e.target.id]: '',
+            },
         });
     };
 
     render() {
+        const { data, errors } = this.state;
         return (
             <div className="ps-my-account">
                 <div className="container">
                     <Form
                         className="ps-form--account"
-                        onSubmit={this.handleSubmit}>
+                        onFinish={this.handleSubmit.bind(this)}>
                         <ul className="ps-tab-list">
                             <li>
                                 <Link href="/account/login">
@@ -59,6 +85,8 @@ class Register extends Component {
                                             className="form-control"
                                             type="email"
                                             placeholder="Email address"
+                                            value={data.email}
+                                            onChange={this.handleChange}
                                         />
                                     </Form.Item>
                                 </div>
@@ -76,6 +104,8 @@ class Register extends Component {
                                             className="form-control"
                                             type="password"
                                             placeholder="Password..."
+                                            value={data.password}
+                                            onChange={this.handleChange}
                                         />
                                     </Form.Item>
                                 </div>
@@ -123,4 +153,13 @@ class Register extends Component {
 const mapStateToProps = (state) => {
     return state.auth;
 };
-export default connect(mapStateToProps)(Register);
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        register: (creds) => {
+            dispatch(register(creds));
+        },
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Register);

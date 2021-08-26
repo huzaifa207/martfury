@@ -5,10 +5,14 @@ import { logOut } from '~/store/auth/action';
 
 const AccountQuickLinks = (props) => {
     const dispatch = useDispatch();
+
+    console.log(props);
+
     const handleLogout = (e) => {
         e.preventDefault();
         dispatch(logOut());
     };
+
     const accountLinks = [
         {
             text: 'Account Information',
@@ -46,7 +50,7 @@ const AccountQuickLinks = (props) => {
         </li>
     ));
 
-    if (isLoggedIn === true) {
+    if (isLoggedIn) {
         return (
             <div className="ps-block--user-account">
                 <i className="icon-user"></i>
@@ -81,4 +85,7 @@ const AccountQuickLinks = (props) => {
     }
 };
 
-export default connect((state) => state)(AccountQuickLinks);
+const mapStateToProps = (state) => {
+    return state;
+};
+export default connect(mapStateToProps)(AccountQuickLinks);

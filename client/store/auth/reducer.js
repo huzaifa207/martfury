@@ -15,6 +15,13 @@ function reducer(state = initState, action) {
             };
         case actionTypes.LOGOUT_SUCCESS:
             return initState;
+
+        case actionTypes.REGISTER_SUCCESS:
+            return {
+                ...state,
+                isLoggedIn: true,
+                currentUser: action.currentUser,
+            };
         default:
             return state;
     }

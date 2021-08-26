@@ -3269,11 +3269,13 @@
         transform: translate(0 20px) scale3d(1, 1, 0);
         transition: all 0.4s ease;
         @include hidden;
+        // visibility: hidden;
     }
 
     &:hover {
         .ps-block__content {
             @include show;
+            // visibility: visible;
             transform: translate(0 20px) scale3d(1, 1, 1);
             background-color: #fff;
             padding: 10px 15px;
