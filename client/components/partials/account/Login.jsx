@@ -9,7 +9,10 @@ import { connect } from 'react-redux';
 class Login extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            email: '',
+            password: ''
+        };
     }
 
     static getDerivedStateFromProps(props) {
@@ -35,7 +38,17 @@ class Login extends Component {
 
     };
 
+    handleEmailChange = e => {
+        this.setState({email: e.target.value});
+    }
+
+    handlePasswordChange = e => {
+        this.setState({password: e.target.value});
+    }
+
     render() {
+        console.log('email: ', this.state.email);
+        console.log('password: ', this.state.password);
         return (
             <div className="ps-my-account">
                 <div className="container">
@@ -71,6 +84,9 @@ class Login extends Component {
                                             className="form-control"
                                             type="text"
                                             placeholder="Username or email address"
+                                            name='email'
+                                            value={this.email}
+                                            onChange={this.handleEmailChange}
                                         />
                                     </Form.Item>
                                 </div>
@@ -88,6 +104,9 @@ class Login extends Component {
                                             className="form-control"
                                             type="password"
                                             placeholder="Password..."
+                                            name='password'
+                                            value={this.password}
+                                            onChange={this.handlePasswordChange}
                                         />
                                     </Form.Item>
                                 </div>

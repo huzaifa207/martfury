@@ -21,3 +21,4 @@ export function logOut() {
 export function logOutSuccess() {
     return { type: actionTypes.LOGOUT_SUCCESS };
 }
+

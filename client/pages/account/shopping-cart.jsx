@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import BreadCrumb from '~/components/elements/BreadCrumb';
 import PageContainer from '~/components/layouts/PageContainer';
 import FooterDefault from '~/components/shared/footers/FooterDefault';
@@ -8,9 +8,13 @@ import useEcomerce from '~/hooks/useEcomerce';
 import ModuleEcomerceCartItems from '~/components/ecomerce/modules/ModuleEcomerceCartItems';
 import Link from 'next/link';
 import ModuleCartSummary from '~/components/ecomerce/modules/ModuleCartSummary';
+import { StateContext } from "~/components/context/StateProvider";
 
 const ShoppingCartScreen = ({ ecomerce }) => {
     const { products, getProducts } = useEcomerce();
+    
+    // states from context
+    const { coupon, setCoupon } = useContext(StateContext);
 
     useEffect(() => {
         if (ecomerce.cartItems) {
@@ -56,6 +60,8 @@ const ShoppingCartScreen = ({ ecomerce }) => {
                                                     className="form-control"
                                                     type="text"
                                                     placeholder="Enter coupon here..."
+                                                    value={coupon}
+                                                    onChange={event => setCoupon(event.target.value)}
                                                 />
                                             </div>
                                             <div className="form-group">
@@ -104,6 +110,7 @@ const ShoppingCartScreen = ({ ecomerce }) => {
     return (
         <>
             <PageContainer footer={<FooterDefault />} title="Shopping Cart">
+                {/* provider provide here */}
                 <div className="ps-page--simple">
                     <BreadCrumb breacrumb={breadCrumb} />
                     <div className="ps-section--shopping ps-shopping-cart">

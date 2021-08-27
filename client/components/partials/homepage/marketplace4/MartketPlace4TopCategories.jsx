@@ -21,7 +21,6 @@ class MartketPlace4TopCategories extends Component {
                                     src="/static/img/categories/1.jpg"
                                     alt="nexusberry"
                                 />
-
                                 <p>Electronics</p>
                             </div>
                         </div>

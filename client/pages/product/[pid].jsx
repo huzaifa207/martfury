@@ -17,9 +17,12 @@ const ProductDefaultPage = () => {
     const [loading, setLoading] = useState(false);
 
     async function getProduct(pid) {
-        setLoading(true);
+        setLoading(false);
         const responseData = await ProductRepository.getProductsById(pid);
-        if (responseData) {
+        if (responseData.error) {
+            router.push('/404');
+        }
+        else {
             setProduct(responseData);
             setTimeout(
                 function () {
@@ -53,11 +56,7 @@ const ProductDefaultPage = () => {
     // Views
     let productView;
     if (!loading) {
-        if (product) {
-            productView = <ProductDetailVariants product={product} />;
-        }
-    } else {
-        productView = <SkeletonProductDetail />;
+        productView = <ProductDetailVariants product={product} />;
     }
     return (
         <PageContainer

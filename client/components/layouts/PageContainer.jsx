@@ -10,8 +10,6 @@ import HeaderMarketPlace from '~/components/shared/headers/HeaderMarketPlace';
 
 const initHeaders = (
     <>
-        {/* <HeaderDefault />
-        <HeaderMobile /> */}
 
         <HeaderMarketPlace />
         <HeaderMobile />
