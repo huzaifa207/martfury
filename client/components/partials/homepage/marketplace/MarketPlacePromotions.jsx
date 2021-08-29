@@ -2,7 +2,7 @@ import React from 'react';
 
 const MarketPlacePromotion = () => (
     <div className="ps-promotions">
-        <div className="container">
+        <div>
             <div className="row">
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
                     <a className="ps-collection" href="#">

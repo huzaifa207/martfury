@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { Menu } from 'antd';
 import { menuPrimary } from '~/public/static/data/menu';
 import menu_data from '~/public/static/data/menu';
+import testMenu from "~/public/static/data/testMenu";
 import Link from 'next/link';
 
 const { SubMenu } = Menu;
@@ -39,7 +40,7 @@ class PanelMenu extends Component {
                 openKeys={this.state.openKeys}
                 onOpenChange={this.onOpenChange}
                 className="menu--mobile-2">
-                {menu_data.menuPrimary.menu_1.map((item) => {
+                {testMenu.menuPrimary.menu_1.map((item) => {
                     if (item.subMenu) {
                         return (
                             <SubMenu

@@ -18,6 +18,7 @@ import '~/scss/organic.scss';
 import '~/scss/technology.scss';
 import '~/scss/autopart.scss';
 import '~/scss/electronic.scss';
+import StateProvider from "~/components/context/StateProvider";
 
 function App({ Component, pageProps }) {
     useEffect(() => {
@@ -27,11 +28,13 @@ function App({ Component, pageProps }) {
     });
 
     return (
-        <CookiesProvider>
-            <MasterLayout>
-                <Component {...pageProps} />
-            </MasterLayout>
-        </CookiesProvider>
+        <StateProvider>
+            <CookiesProvider>
+                <MasterLayout>
+                    <Component {...pageProps} />
+                </MasterLayout>
+            </CookiesProvider>
+        </StateProvider>
     );
 }
 

@@ -2,14 +2,15 @@
     .ps-home-banner {
         @media (max-width: 991px) {
             .ps-banner--market-1 {
-                background-size: cover;
-                background-position: 50% 50% !important;
+                // background-size: cover;
+                // background-position: 50% 50% !important;
+                display: flex;
             }
         }
     }
 
     .ps-site-features {
-        padding: 60px 0;
+        padding: 20px 0;
         @include media('<sm') {
             padding: 40px 0;
         }
@@ -21,6 +22,7 @@
     .ps-promotions {
         .ps-collection {
             border: 1px solid rgba(#000, 0.15);
+            margin-bottom: 30px;
             @include media('<sm') {
                 margin-bottom: 30px;
             }
@@ -28,7 +30,7 @@
     }
 
     .ps-deal-of-day {
-        padding: 70px 0;
+        padding: 10px 0;
         @include media('<sm') {
             padding: 45px 0;
         }
