@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import { login } from '../../../store/auth/action';
+import { login } from '~/store/auth/action';
 
 import { Form, Input, notification } from 'antd';
 import { connect } from 'react-redux';
@@ -10,8 +10,11 @@ class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: '',
-            password: ''
+            data: {
+                identifier: '',
+                password: '',
+            },
+            errors: {},
         };
     }
 
@@ -31,24 +34,24 @@ class Login extends Component {
         });
     }
 
-    handleLoginSubmit = e => {
-        console.log('test');
-        this.props.dispatch(login());
-        Router.push('/');
-
+    handleLoginSubmit = (e) => {
+        const { data } = this.state;
+        this.props.login(data);
     };
-
-    handleEmailChange = e => {
-        this.setState({email: e.target.value});
-    }
-
-    handlePasswordChange = e => {
-        this.setState({password: e.target.value});
-    }
-
+    handleChange = (e) => {
+        this.setState({
+            data: {
+                ...this.state.data,
+                [e.target.id]: e.target.value,
+            },
+            errors: {
+                ...this.state.errors,
+                [e.target.id]: '',
+            },
+        });
+    };
     render() {
-        console.log('email: ', this.state.email);
-        console.log('password: ', this.state.password);
+        const { data, errors } = this.state;
         return (
             <div className="ps-my-account">
                 <div className="container">
@@ -72,7 +75,7 @@ class Login extends Component {
                                 <h5>Log In Your Account</h5>
                                 <div className="form-group">
                                     <Form.Item
-                                        name="username"
+                                        name="identifier"
                                         rules={[
                                             {
                                                 required: true,
@@ -84,9 +87,8 @@ class Login extends Component {
                                             className="form-control"
                                             type="text"
                                             placeholder="Username or email address"
-                                            name='email'
-                                            value={this.email}
-                                            onChange={this.handleEmailChange}
+                                            value={data.identifier}
+                                            onChange={this.handleChange}
                                         />
                                     </Form.Item>
                                 </div>
@@ -104,9 +106,8 @@ class Login extends Component {
                                             className="form-control"
                                             type="password"
                                             placeholder="Password..."
-                                            name='password'
-                                            value={this.password}
-                                            onChange={this.handlePasswordChange}
+                                            value={data.password}
+                                            onChange={this.handleChange}
                                         />
                                     </Form.Item>
                                 </div>
@@ -138,7 +139,7 @@ class Login extends Component {
                                         <a
                                             className="facebook"
                                             href="#"
-                                            onClick={e =>
+                                            onClick={(e) =>
                                                 this.handleFeatureWillUpdate(e)
                                             }>
                                             <i className="fa fa-facebook"></i>
@@ -148,7 +149,7 @@ class Login extends Component {
                                         <a
                                             className="google"
                                             href="#"
-                                            onClick={e =>
+                                            onClick={(e) =>
                                                 this.handleFeatureWillUpdate(e)
                                             }>
                                             <i className="fa fa-google-plus"></i>
@@ -158,7 +159,7 @@ class Login extends Component {
                                         <a
                                             className="twitter"
                                             href="#"
-                                            onClick={e =>
+                                            onClick={(e) =>
                                                 this.handleFeatureWillUpdate(e)
                                             }>
                                             <i className="fa fa-twitter"></i>
@@ -168,7 +169,7 @@ class Login extends Component {
                                         <a
                                             className="instagram"
                                             href="#"
-                                            onClick={e =>
+                                            onClick={(e) =>
                                                 this.handleFeatureWillUpdate(e)
                                             }>
                                             <i className="fa fa-instagram"></i>
@@ -183,7 +184,15 @@ class Login extends Component {
         );
     }
 }
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
     return state.auth;
 };
-export default connect(mapStateToProps)(Login);
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        login: (creds) => {
+            dispatch(login(creds));
+        },
+    };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

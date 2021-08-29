@@ -5,6 +5,7 @@
  * */
 
 import React from 'react';
+import Repository, { baseUrl } from '~/repositories/Repository';
 import StoreRepository from '~/repositories/StoreRepository';
 
 export async function getStoresHelper(pageSize = 12) {
@@ -18,4 +19,12 @@ export async function getStoresHelper(pageSize = 12) {
     } else {
         return null;
     }
+}
+
+export function getUser(creds) {
+    return Repository.post(`${baseUrl}/auth/local`, creds);
+}
+
+export function registerUser(creds) {
+    return Repository.post(`${baseUrl}/auth/local/register`, creds);
 }
