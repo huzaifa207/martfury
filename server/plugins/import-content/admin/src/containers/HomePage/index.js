@@ -10,6 +10,8 @@ import { Select, Label } from "@buffetjs/core";
 import { get, has, isEmpty, pickBy, set } from "lodash";
 
 import UploadFileForm from "../../components/UploadFileForm";
+import ExternalUrlForm from "../../components/ExternalUrlForm";
+import RawInputForm from "../../components/RawInputForm";
 import Row from "../../components/Row";
 import Block from "../../components/Block";
 import pluginId from "../../pluginId";
@@ -142,10 +144,26 @@ const HomePage = () => {
               />
             </div>
           </Row>
-          <UploadFileForm
-            onRequestAnalysis={onRequestAnalysis}
-            loadingAnalysis={analyzing}
-          />
+          <Row>
+            {importSource === "upload" && (
+              <UploadFileForm
+                onRequestAnalysis={onRequestAnalysis}
+                loadingAnalysis={analyzing}
+              />
+            )}
+            {importSource === "url" && (
+              <ExternalUrlForm
+                onRequestAnalysis={onRequestAnalysis}
+                loadingAnalysis={analyzing}
+              />
+            )}
+            {importSource === "raw" && (
+              <RawInputForm
+                onRequestAnalysis={onRequestAnalysis}
+                loadingAnalysis={analyzing}
+              />
+            )}
+          </Row>
         </Block>
       </div>
     </div>
