@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Radio } from 'antd';
 import { useRouter } from 'next/router';
+import { StateContext } from "~/components/context/StateProvider";
 
 const ModulePaymentMethods = () => {
     const Router = useRouter();
     const [method, setMethod] = useState(1);
+    const {
+        cardNumber,
+        setCardNumber,
+        cardHolder,
+        setCardHolder,
+        expDate,
+        setExpDate,
+        cvc,
+        setCvc
+    } = useContext(StateContext);
 
     function handleChangeMethod(e) {
         setMethod(e.target.value); //e.target.value
@@ -32,11 +43,21 @@ const ModulePaymentMethods = () => {
                         <div className="ps-block__tab">
                             <div className="form-group">
                                 <label>Card Number</label>
-                                <input type="text" className="form-control" />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    value={cardNumber}
+                                    onChange={event => setCardNumber(event.target.value)}
+                                />
                             </div>
                             <div className="form-group">
                                 <label>Card Holders</label>
-                                <input type="text" className="form-control" />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    value={cardHolder}
+                                    onChange={event => setCardHolder(event.target.value)}
+                                />
                             </div>
                             <div className="row">
                                 <div className="col-sm-4 col-4">
@@ -46,6 +67,8 @@ const ModulePaymentMethods = () => {
                                             type="text"
                                             className="form-control"
                                             placeholder="01/21"
+                                            value={expDate}
+                                            onChange={event => setExpDate(event.target.value)}
                                         />
                                     </div>
                                 </div>
@@ -55,6 +78,8 @@ const ModulePaymentMethods = () => {
                                         <input
                                             type="text"
                                             className="form-control"
+                                            value={cvc}
+                                            onChange={event => setCvc(event.target.value)}
                                         />
                                     </div>
                                 </div>

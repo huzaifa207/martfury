@@ -1,15 +1,15 @@
 .ps-footer {
-    padding-top: 70px;
+    padding-top: 30px;
 
     &__widgets {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding-bottom: 35px;
+        // padding-bottom: 3px;
     }
 
     &__links {
-        padding: 60px 0;
+        padding: 20px 0;
         border-top: 1px solid #e1e1e1;
 
         p {
@@ -61,7 +61,7 @@
     }
 
     &__copyright {
-        padding: 35px 0;
+        padding: 15px 0;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;

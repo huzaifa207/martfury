@@ -140,7 +140,7 @@
 
 
 .ps-newsletter {
-    padding: 65px 0;
+    padding: 25px 0;
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
     @include media('<sm') {
@@ -584,7 +584,7 @@
 }
 
 .ps-client-say {
-    padding: 70px 0;
+    padding: 30px 0;
     background-color: #f5f5f5;
 
     .ps-section__header {
@@ -625,7 +625,7 @@
 }
 
 .ps-best-sale-brands {
-    padding: 70px 0;
+    padding: 10px 0;
     @extend %list-reset;
 
     .ps-section__header {

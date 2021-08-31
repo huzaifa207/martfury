@@ -42,7 +42,7 @@ class HeaderMobile extends Component {
                         <Link href="/">
                             <a className="ps-logo">
                                 <img
-                                    src="/static/img/logo_light.png"
+                                    src="/static/images/logo.png"
                                     alt="nexusberry"
                                 />
                             </a>

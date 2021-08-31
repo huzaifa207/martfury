@@ -38,7 +38,6 @@ class Login extends Component {
         const { data } = this.state;
         this.props.login(data);
     };
-
     handleChange = (e) => {
         this.setState({
             data: {
