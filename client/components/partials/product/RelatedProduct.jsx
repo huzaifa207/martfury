@@ -8,7 +8,7 @@ import { carouselStandard } from '~/utilities/carousel-helpers';
 import NextArrow from '~/components/elements/carousel/NextArrow';
 import PrevArrow from '~/components/elements/carousel/PrevArrow';
 
-const RelatedProduct = ({ collectionSlug, boxed, layout }) => {
+const RelatedProduct = ({ collectionSlug, boxed, layout, title }) => {
     const [productItems, setProductItems] = useState(null);
     const [loading, setLoading] = useState(true);
 
@@ -33,23 +33,24 @@ const RelatedProduct = ({ collectionSlug, boxed, layout }) => {
     }, [collectionSlug]);
 
     const carouselFullwidth = {
-        dots: false,
+        dots: true,
         infinite: productItems && productItems.length > 7 ? true : false,
         speed: 750,
-        slidesToShow: 7,
+        slidesToShow: 5,
         slidesToScroll: 3,
         arrows: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         lazyload: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        cssEase: 'Linear',
         responsive: [
             {
                 breakpoint: 1750,
                 settings: {
                     slidesToShow: 6,
                     slidesToScroll: 3,
-                    dots: true,
-                    arrows: false,
                 },
             },
 
@@ -59,8 +60,6 @@ const RelatedProduct = ({ collectionSlug, boxed, layout }) => {
                     slidesToShow: 5,
                     slidesToScroll: 2,
                     infinite: true,
-                    dots: true,
-                    arrows: false,
                 },
             },
             {
@@ -69,7 +68,6 @@ const RelatedProduct = ({ collectionSlug, boxed, layout }) => {
                     slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
                 },
             },
             {
@@ -78,7 +76,6 @@ const RelatedProduct = ({ collectionSlug, boxed, layout }) => {
                     slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
                 },
             },
             {
@@ -86,7 +83,6 @@ const RelatedProduct = ({ collectionSlug, boxed, layout }) => {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 2,
-                    dots: true,
                     arrows: false,
                 },
             },
@@ -94,7 +90,6 @@ const RelatedProduct = ({ collectionSlug, boxed, layout }) => {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 2,
-                    dots: true,
                     arrows: false,
                 },
             },
@@ -105,31 +100,15 @@ const RelatedProduct = ({ collectionSlug, boxed, layout }) => {
     let carouselView;
     if (!loading) {
         if (productItems) {
-            if ((layout = 'fullwidth')) {
-                carouselView = (
-                    <Slider
-                        {...carouselFullwidth}
-                        className="ps-carousel outside">
-                        {productItems.map((item, index) => {
-                            if (index < 8) {
-                                return <Product product={item} key={item.id} />;
-                            }
-                        })}
-                    </Slider>
-                );
-            } else {
-                carouselView = (
-                    <Slider
-                        {...carouselStandard}
-                        className="ps-carousel outside">
-                        {productItems.map((item, index) => {
-                            if (index < 8) {
-                                return <Product product={item} key={item.id} />;
-                            }
-                        })}
-                    </Slider>
-                );
-            }
+            carouselView = (
+                <Slider {...carouselFullwidth} className="ps-carousel outside">
+                    {productItems.map((item, index) => {
+                        if (index < 8) {
+                            return <Product product={item} key={item.id} />;
+                        }
+                    })}
+                </Slider>
+            );
         } else {
             carouselView = <p>No product found.</p>;
         }
@@ -143,7 +122,7 @@ const RelatedProduct = ({ collectionSlug, boxed, layout }) => {
                 boxed === true ? 'boxed' : ''
             }`}>
             <div className="ps-section__header">
-                <h3>Related products</h3>
+                <h3>{title}</h3>
             </div>
             <div className="ps-section__content">{carouselView}</div>
         </div>

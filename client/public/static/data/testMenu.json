@@ -13,23 +13,23 @@
                     },
                     {
                         "text": "Home Textiles",
-                        "url": "/home/auto-part"
+                        "url": "/"
                     },
                     {
                         "text": "Decoration and Lighting",
-                        "url": "/home/technology"
+                        "url": "/"
                     },
                     {
                         "text": "Garden & Tarrace",
-                        "url": "/home/organic"
+                        "url": "/"
                     },
                     {
                         "text": "DIY & Hardware",
-                        "url": "/home/market-place"
+                        "url": "/"
                     },
                     {
                         "text": "Pets",
-                        "url": "/home/market-place-2"
+                        "url": "/"
                     }
                 ]
             },
@@ -45,7 +45,7 @@
                     },
                     {
                         "text": "Small Electrical Appliances",
-                        "url": "/home/auto-part"
+                        "url": "/"
                     }
                 ]
             },
@@ -61,23 +61,23 @@
                     },
                     {
                         "text": "Sports Material and Equipments",
-                        "url": "/home/auto-part"
+                        "url": "/"
                     },
                     {
                         "text": "Running & Athletics",
-                        "url": "/home/technology"
+                        "url": "/"
                     },
                     {
                         "text": "Beach & Pool",
-                        "url": "/home/organic"
+                        "url": "/"
                     },
                     {
                         "text": "Swimming",
-                        "url": "/home/market-place"
+                        "url": "/"
                     },
                     {
                         "text": "Tennis & Padel",
-                        "url": "/home/market-place-2"
+                        "url": "/"
                     }
                 ]
             },

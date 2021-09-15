@@ -532,7 +532,7 @@
 }
 
 .ps-product--detail {
-    margin-bottom: 5rem;
+    margin-bottom: 0.5rem;
 
     h1 {
         margin-bottom: 10px;
@@ -1478,7 +1478,7 @@
     }
 
     > .ps-product__content {
-        padding-top: 100px;
+        padding-top: 20px;
     }
 
     .ps-product {
@@ -1529,7 +1529,7 @@
             display: none;
         }
         .ps-product__content {
-            padding-top: 100px;
+            padding-top: 20px;
         }
     }
 
@@ -2140,9 +2140,9 @@
             content: '';
             @include max-area();
             @include linear-gradient(
-                            to bottom,
-                            rgba(#000, 0.05) 0%,
-                            rgba(#000, 0.9)
+                to bottom,
+                rgba(#000, 0.05) 0%,
+                rgba(#000, 0.9)
             );
             transition: all 0.4s ease;
             @include hidden;

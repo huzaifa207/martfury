@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_reviews",
+  "info": {
+    "name": "Product-Reviews"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "reviewer": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "product": {
+      "via": "reviews",
+      "model": "product"
+    }
+  }
+}

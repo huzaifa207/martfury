@@ -138,7 +138,6 @@
     }
 }
 
-
 .ps-newsletter {
     padding: 25px 0;
     border-top: 1px solid #e1e1e1;
@@ -565,6 +564,7 @@
 }
 
 .ps-customer-bought {
+    margin-bottom: 30px;
     @media (min-width: 1680px) {
         .ps-section__content {
             .row {
@@ -1753,7 +1753,7 @@
     grid-gap: 15px;
     grid-template-columns: repeat(
         4,
-                    minmax(200px, 1fr)
+        minmax(200px, 1fr)
     ); /* [2] Make columns adjust according to the available viewport */
     grid-auto-rows: 100%;
 
@@ -2079,6 +2079,7 @@
 }
 
 .ps-related-products {
+    margin-bottom: 30px;
     &.boxed {
         padding: 20px;
         background-color: #fff;

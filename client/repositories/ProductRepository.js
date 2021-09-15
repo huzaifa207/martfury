@@ -58,7 +58,23 @@ class ProductRepository {
         return reponse;
     }
 
-    async getProductsById(payload) {
+    // async getProductsById(payload, signal = {}) {
+    //     const reponse = await Repository.get(
+    //         `${baseUrl}/products/${payload}`,
+    //         signal
+    //     )
+    //         .then((response) => {
+    //             return response.data;
+    //         })
+    //         .catch((error) => {
+    //             if (!signal.aborted) {
+    //                 return { error: JSON.stringify(error) };
+    //             }
+    //         });
+    //     return reponse;
+    // }
+
+    async getProductsById(payload, signal = {}) {
         const reponse = await Repository.get(`${baseUrl}/products/${payload}`)
             .then((response) => {
                 return response.data;

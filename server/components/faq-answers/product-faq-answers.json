@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_faq_answers_product_faq_answers",
+  "info": {
+    "name": "Product-FAQ-Answers",
+    "icon": "sitemap"
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "string"
+    },
+    "answerMultimedia": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "answerer": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

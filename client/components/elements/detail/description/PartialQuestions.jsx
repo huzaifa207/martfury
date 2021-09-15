@@ -2,7 +2,7 @@ import React from 'react';
 
 const PartialQuestions = () => (
     <div className="ps-block--questions-answers">
-        <h3>Questions and Answers</h3>
+        {/* TODO: make faqs dynamic */}
         <div className="form-group">
             <input
                 className="form-control"

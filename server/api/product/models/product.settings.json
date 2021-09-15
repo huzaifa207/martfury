@@ -38,16 +38,15 @@
     "sale_price": {
       "type": "decimal"
     },
-    "vendor": {
-      "type": "string"
-    },
     "brands": {
       "collection": "brand",
       "via": "products",
       "dominant": true
     },
     "review": {
-      "type": "integer"
+      "type": "integer",
+      "max": 5,
+      "min": 1
     },
     "is_out_of_stock": {
       "type": "boolean",
@@ -84,6 +83,26 @@
     },
     "slug": {
       "type": "string"
+    },
+    "product_subcategories": {
+      "collection": "product-subcategory",
+      "via": "products"
+    },
+    "product_faqs": {
+      "collection": "product-faq",
+      "via": "product"
+    },
+    "reviews": {
+      "collection": "product-reviews",
+      "via": "product"
+    },
+    "store": {
+      "model": "store",
+      "via": "products"
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
     }
   }
 }

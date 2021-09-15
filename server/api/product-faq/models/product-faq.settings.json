@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_faqs",
+  "info": {
+    "name": "Product-FAQ"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "upvote": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "questioner": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "answers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq-answers.product-faq-answers"
+    },
+    "product": {
+      "via": "product_faqs",
+      "model": "product"
+    }
+  }
+}

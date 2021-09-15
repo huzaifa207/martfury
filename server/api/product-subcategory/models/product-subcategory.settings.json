@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_subcategories",
+  "info": {
+    "name": "Product-Subcategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "products": {
+      "via": "product_subcategories",
+      "collection": "product",
+      "dominant": true
+    },
+    "category": {
+      "model": "product-categories",
+      "via": "subcategories"
+    }
+  }
+}

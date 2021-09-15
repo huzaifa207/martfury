@@ -18,8 +18,6 @@ const ModuleProductHasVariants = ({ ecomerce, currency, product }) => {
     const [selectedSize, setSelectedSize] = useState(null);
     const [sizeItems, setSizeItems] = useState(null);
     const { addItem } = useEcomerce();
-    console.log('select variant state: ', selectedVariant);
-    console.log('size state: ', sizeItems);
 
     function handleAddItemToCart(e) {
         e.preventDefault();
@@ -155,7 +153,7 @@ const ModuleProductHasVariants = ({ ecomerce, currency, product }) => {
                     </div>
                 );
             });
-            if (sizeItems !== null) {
+            if (sizeItems && sizeItems.length > 0) {
                 sizeSelectionArea = sizeItems.map((item) => {
                     return (
                         <div
@@ -190,17 +188,19 @@ const ModuleProductHasVariants = ({ ecomerce, currency, product }) => {
                         {colorSelectionArea}
                     </figure>
                     {selectedVariant !== null}
-                    <figure>
-                        <figcaption>
-                            Size:
-                            <strong className="pl-1">
-                                {selectedSize !== null
-                                    ? selectedSize.name
-                                    : 'Choose an option'}
-                            </strong>
-                        </figcaption>
-                        {sizeSelectionArea}
-                    </figure>
+                    {sizeItems && sizeItems.length > 0 && (
+                        <figure>
+                            <figcaption>
+                                Size:
+                                <strong className="pl-1">
+                                    {selectedSize !== null
+                                        ? selectedSize.name
+                                        : 'Choose an option'}
+                                </strong>
+                            </figcaption>
+                            {sizeSelectionArea}
+                        </figure>
+                    )}
                 </div>
             );
         } else {
