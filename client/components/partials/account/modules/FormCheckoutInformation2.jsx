@@ -5,7 +5,8 @@ import { Form, Input } from 'antd';
 import { StateContext } from "~/components/context/StateProvider";
 import ModulePaymentMethods from '~/components/ecomerce/modules/ModulePaymentMethods';
 
-function FormCheckoutInformation() {
+
+function FormCheckoutInformation2() {
     const {
         emailPhone,
         setEmailPhone,
@@ -23,7 +24,7 @@ function FormCheckoutInformation() {
         setPostalCode
 
     } = useContext(StateContext);
-    
+   
 
     console.log(emailPhone);
 
@@ -32,10 +33,14 @@ function FormCheckoutInformation() {
     };
 
     return (
+
+
+        
         <Form
             className="ps-form__billing-info"
             onFinish={handleLoginSubmit}>
-            <h3 className="ps-form__heading">Contact information</h3>                        
+            <h3 className="ps-form__heading">SSN</h3>
+            
                 <div>
                 <div className="form-group">
                 <Form.Item
@@ -44,13 +49,13 @@ function FormCheckoutInformation() {
                         {
                             required: false,                            
                             message:
-                                'Enter email or Phone!',
+                                'Enter SSN!',
                         },
                     ]}>
                     <Input
                         className="form-control"
                         type="text"
-                        placeholder="Email or Phone Number"
+                        placeholder="SSN - Social Security Number"
                         value={emailPhone}
                         onChange={event => setEmailPhone(event.target.value)}
                         
@@ -87,7 +92,7 @@ function FormCheckoutInformation() {
                                 placeholder="First Name"
                                 value={firstName}
                                 onChange={event => setFirstName(event.target.value)}
-                                // disabled={true}
+                                disabled={true}
                             />
                         </Form.Item>
                     </div>
@@ -108,7 +113,7 @@ function FormCheckoutInformation() {
                                 placeholder="Last Name"
                                 value={lastName}
                                 onChange={event => setLastName(event.target.value)}
-                                // disabled={true}
+                                disabled={true}
                             />
                         </Form.Item>
                     </div>
@@ -129,7 +134,7 @@ function FormCheckoutInformation() {
                         placeholder="Address"
                         value={address}
                         onChange={event => setAddress(event.target.value)}
-                        // disabled={true}
+                        disabled={true}
                     />
                 </Form.Item>
             </div>
@@ -148,11 +153,12 @@ function FormCheckoutInformation() {
                         placeholder="Apartment, suite, etc. (optional)"
                         value={apartment}
                         onChange={event => setApartment(event.target.value)}
-                        // disabled={true}
+                        disabled={true}
                     />
                 </Form.Item>
             </div>
-            </div>            
+            </div>
+                       
             <div className="row">
                 <div className="col-sm-6">
                     <div className="form-group">
@@ -170,6 +176,7 @@ function FormCheckoutInformation() {
                                 placeholder="City"
                                 value={city}
                                 onChange={event => setCity(event.target.value)}
+                                disabled={true}
                             />
                         </Form.Item>
                     </div>
@@ -190,6 +197,7 @@ function FormCheckoutInformation() {
                                 placeholder="Postal Code"
                                 value={postalCode}
                                 onChange={event => setPostalCode(event.target.value)}
+                                disabled={true}
                             />
                         </Form.Item>
                     </div>
@@ -232,4 +240,4 @@ function FormCheckoutInformation() {
 }
 
 
-export default FormCheckoutInformation;
+export default FormCheckoutInformation2;

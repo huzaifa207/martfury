@@ -5,7 +5,7 @@ import { Form, Input } from 'antd';
 import { StateContext } from "~/components/context/StateProvider";
 import ModulePaymentMethods from '~/components/ecomerce/modules/ModulePaymentMethods';
 
-function FormCheckoutInformation() {
+function ManualPrivateFormCheckoutInformation() {
     const {
         emailPhone,
         setEmailPhone,
@@ -232,4 +232,4 @@ function FormCheckoutInformation() {
 }
 
 
-export default FormCheckoutInformation;
+export default ManualPrivateFormCheckoutInformation;
