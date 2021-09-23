@@ -1,23 +1,14 @@
-
-import MartketPlace4TopCategories from '~/components/partials/homepage/marketplace4/MartketPlace4TopCategories';
-import MarketPlaceSeasonalCampaign from "~/components/partials/homepage/marketplace/MarketPlaceSeasonalCampaign";
-import MarketPlaceGiftAndBundles from "~/components/partials/homepage/marketplace/MarketPlaceGiftAndBundles";
-import MarketPlaceNewCollection from "~/components/partials/homepage/marketplace/MarketPlaceNewCollection";
-import MarketPlacePopularProducts from "~/components/partials/homepage/marketplace/MarketPlacePopularProducts";
-import MarketPlacePopularSeller from "~/components/partials/homepage/marketplace/MarketPlacePopularSeller";
-import MarketPlaceTestimonials from "~/components/partials/homepage/marketplace/MarketPlaceTestimonials";
-// ------------------------------------------------------------------------------------------------
-
 import React from 'react';
+import MartketPlace4TopCategories from '~/components/partials/homepage/marketplace4/MartketPlace4TopCategories';
+import MarketPlaceSeasonalCampaign from '~/components/partials/homepage/marketplace/MarketPlaceSeasonalCampaign';
+import MarketPlaceGiftAndBundles from '~/components/partials/homepage/marketplace/MarketPlaceGiftAndBundles';
+import MarketPlaceNewCollection from '~/components/partials/homepage/marketplace/MarketPlaceNewCollection';
+import MarketPlacePopularProducts from '~/components/partials/homepage/marketplace/MarketPlacePopularProducts';
+import MarketPlacePopularSeller from '~/components/partials/homepage/marketplace/MarketPlacePopularSeller';
+import MarketPlaceTestimonials from '~/components/partials/homepage/marketplace/MarketPlaceTestimonials';
 import MarketPlaceHomeBanner from '~/components/partials/homepage/marketplace/MartketPlaceHomeBanner';
 import MarketPlaceSiteFeatures from '~/components/partials/homepage/marketplace/MarketPlaceSiteFeatures';
-import MarketPlacePromotion from '~/components/partials/homepage/marketplace/MarketPlacePromotions';
 import MarketPlaceDealOfDay from '~/components/partials/homepage/marketplace/MarketPlaceDealOfDay';
-import MarketClothingsAndApparel from '~/components/partials/homepage/marketplace/modules/MarketClothingsAndApparel';
-import MarketConsumerElectronics from '~/components/partials/homepage/marketplace/modules/MarketConsumerElectronics';
-import MarketComputerAndTechnology from '~/components/partials/homepage/marketplace/modules/MarketComputerAndTechnology';
-import MarketGardenAndKitchen from '~/components/partials/homepage/marketplace/modules/MarketGardenAndKitchen';
-import MarketHeathyAndBeauty from '~/components/partials/homepage/marketplace/modules/MarketHeathyAndBeauty';
 import Newsletters from '~/components/partials/commons/Newletters';
 import PageContainer from '~/components/layouts/PageContainer';
 import MarketPlacePromotionHeader from '~/components/partials/homepage/marketplace/MarketPlacePromotionHeader';
@@ -37,35 +28,17 @@ const HomeMarketPlacePage = () => {
             <main id="homepage-3">
                 <MarketPlaceHomeBanner />
                 <MarketPlaceSiteFeatures />
-                {/* <div className='container'>
-                    <MarketPlacePromotion />
-
-                </div> */}
                 <MartketPlace4TopCategories />
                 <MarketPlaceDealOfDay collectionSlug="deal-of-the-day" />
-                {/* <div className="ps-section--gray"> */}
-                {/* <div className="container"> */}
-                {/* <MarketClothingsAndApparel collectionSlug="clothings" />
-                        <MarketConsumerElectronics collectionSlug="consumer-electronics" />
-                        <MarketComputerAndTechnology collectionSlug="customer-bought-products" />
-                        <MarketGardenAndKitchen collectionSlug="garden-and-kitchen" />
-                        <MarketHeathyAndBeauty categorySlug="health-and-beauty" /> */}
-
-                {/* <MarketPlaceDealOfDay collectionSlug="deal-of-the-day" /> */}
                 <MarketPlaceSeasonalCampaign collectionSlug="deal-of-the-day" />
                 <MarketPlaceGiftAndBundles collectionSlug="deal-of-the-day" />
                 <MarketPlaceNewCollection collectionSlug="deal-of-the-day" />
                 <MarketPlacePopularProducts
                     collectionSlug="deal-of-the-day"
-                    title='Popular Products'
+                    title="Popular Products"
                 />
                 <MarketPlacePopularSeller />
                 <MarketPlaceTestimonials />
-
-
-
-                {/* </div> */}
-                {/* </div> */}
                 <Newsletters />
             </main>
         </PageContainer>

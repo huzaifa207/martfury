@@ -1,7 +1,8 @@
 import React from 'react';
 
-const PartialSpecification = () => (
+const PartialSpecification = ({ specification }) => (
     <div className="table-responsive">
+        {/* TODO: make specifications dynamic */}
         <table className="table table-bordered ps-table ps-table--specification">
             <tbody>
                 <tr>

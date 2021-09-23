@@ -13,39 +13,39 @@
                     },
                     {
                         "text": "Home Auto Parts",
-                        "url": "/home/auto-part"
+                        "url": "/"
                     },
                     {
                         "text": "Home Technology",
-                        "url": "/home/technology"
+                        "url": "/"
                     },
                     {
                         "text": "Home Organic",
-                        "url": "/home/organic"
+                        "url": "/"
                     },
                     {
                         "text": "Home Marketplace V1",
-                        "url": "/home/market-place"
+                        "url": "/"
                     },
                     {
                         "text": "Home Marketplace V2",
-                        "url": "/home/market-place-2"
+                        "url": "/"
                     },
                     {
                         "text": "Home Marketplace V3",
-                        "url": "/home/market-place-3"
+                        "url": "/"
                     },
                     {
                         "text": "Home Marketplace V4",
-                        "url": "/home/market-place-4"
+                        "url": "/"
                     },
                     {
                         "text": "Home Electronic",
-                        "url": "/home/electronic"
+                        "url": "/"
                     },
                     {
                         "text": "Home Furniture",
-                        "url": "/home/furniture"
+                        "url": "/"
                     }
                 ]
             },
@@ -407,7 +407,8 @@
         {
             "icon": "icon-shirt",
             "text": "Clothing & Apparel",
-            "url": "/shop","extraClass": "menu-item-has-children has-mega-menu",
+            "url": "/shop",
+            "extraClass": "menu-item-has-children has-mega-menu",
             "subClass": "sub-menu",
             "mega": true,
             "megaContent": [

@@ -6,27 +6,29 @@ import PartialSpecification from '~/components/elements/detail/description/Parti
 import PartialVendor from '~/components/elements/detail/description/PartialVendor';
 import PartialReview from '~/components/elements/detail/description/PartialReview';
 import PartialOffer from '~/components/elements/detail/description/PartialOffer';
+import PartialQuestions from './PartialQuestions';
 
 const { TabPane } = Tabs;
 
-const DefaultDescription = () => {
+const DefaultDescription = ({ product }) => {
+    const { description, specification, store, reviews, review } = product;
     return (
         <div className="ps-product__content ps-tab-root">
             <Tabs defaultActiveKey="1">
                 <TabPane tab="Description" key="1">
-                    <PartialDescription />
+                    <PartialDescription description={description} />
                 </TabPane>
                 <TabPane tab="Specification" key="2">
-                    <PartialSpecification />
+                    <PartialSpecification specification={specification} />
                 </TabPane>
                 <TabPane tab="Vendor" key="3">
-                    <PartialVendor />
+                    <PartialVendor store={store} />
                 </TabPane>
                 <TabPane tab="Reviews (1)" key="4">
-                    <PartialReview />
+                    <PartialReview reviews={reviews} review={review} />
                 </TabPane>
                 <TabPane tab="Questions and Answers" key="5">
-                    Content of Tab Pane 3
+                    <PartialQuestions />
                 </TabPane>
                 <TabPane tab="More Offers" key="6">
                     <PartialOffer />

@@ -10,13 +10,12 @@ import ModuleDetailActionsMobile from '~/components/elements/detail/modules/Modu
 import ModuleDetailTopInformation from '~/components/elements/detail/modules/ModuleDetailTopInformation';
 
 const ProductDetailVariants = ({ product }) => {
-    console.log({ product });
     if (product !== null && typeof product !== 'Array') {
         if (product.variants && product.variants.length) {
             return (
                 <div className="ps-product--detail ps-product--fullwidth">
                     <ModuleProductHasVariants product={product} />
-                    <DefaultDescription />
+                    <DefaultDescription product={product} />
                 </div>
             );
         } else {
@@ -33,7 +32,7 @@ const ProductDetailVariants = ({ product }) => {
                             <ModuleDetailActionsMobile />
                         </div>
                     </div>
-                    <DefaultDescription />
+                    <DefaultDescription product={product} />
                 </div>
             );
         }

@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 
-const PartialVendor = () => (
-    <section>
-        <h4>GoPro</h4>
-        <p>
-            Digiworld US, New York’s no.1 online retailer was established in May 2012 with the aim
-            and vision to become the one-stop shop for retail in New York with implementation of
-            best practices both online
-        </p>
-        <a href="#">More Products from Gopro</a>
-    </section>
-);
+import { baseUrl } from '~/repositories/Repository';
+
+const PartialVendor = ({ store }) => {
+    const { store_name, description } = store;
+
+    return (
+        <section>
+            <h4>{store_name}</h4>
+            <ReactMarkdown
+                children={description}
+                transformImageUri={(uri) =>
+                    uri.startsWith('http') ? uri : `${baseUrl}${uri}`
+                }
+            />
+            <a href="#">More Products from {store_name}</a>
+        </section>
+    );
+};
 
 export default PartialVendor;
