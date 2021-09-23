@@ -28,7 +28,7 @@ const ModulePaymentMethods = () => {
 
     return (
         <>
-            <h4>Payment Methods</h4>
+            <h3 className="ps-form__heading">Payment Methods</h3>
             <div className="ps-block--payment-method">
                 <div className="ps-block__header">
                     <Radio.Group
@@ -40,6 +40,7 @@ const ModulePaymentMethods = () => {
                 </div>
                 <div className="ps-block__content">
                     {method === 1 ? (
+                        
                         <div className="ps-block__tab">
                             <div className="form-group">
                                 <label>Card Number</label>
@@ -60,7 +61,7 @@ const ModulePaymentMethods = () => {
                                 />
                             </div>
                             <div className="row">
-                                <div className="col-sm-4 col-4">
+                                <div className="col-sm-6 col-6">
                                     <div className="form-group">
                                         <label>Expiration Date (MM/YY)</label>
                                         <input
@@ -72,7 +73,7 @@ const ModulePaymentMethods = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className=" col-sm-4 col-4">
+                                <div className=" col-sm-6 col-6">
                                     <div className="form-group">
                                         <label>CVV</label>
                                         <input
@@ -83,15 +84,19 @@ const ModulePaymentMethods = () => {
                                         />
                                     </div>
                                 </div>
+                                
                             </div>
+                            
                             <div className="form-group">
                                 <button
                                     className="ps-btn ps-btn--fullwidth"
                                     onClick={(e) => handleSubmit(e)}>
-                                    Submit
+                                    Confirm Payment
                                 </button>
                             </div>
                         </div>
+                        
+                           
                     ) : (
                         <div className="ps-block__tab">
                             <a
@@ -101,7 +106,9 @@ const ModulePaymentMethods = () => {
                                 Process with Paypal
                             </a>
                         </div>
-                    )}
+                    )
+                    }
+                    
                 </div>
             </div>
         </>
